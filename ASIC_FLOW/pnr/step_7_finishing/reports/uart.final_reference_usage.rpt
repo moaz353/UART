@@ -1,0 +1,33 @@
+****************************************
+Report : reference
+Design : uart
+Version: O-2018.06-SP1
+Date   : Mon Aug 31 22:06:33 2026
+****************************************
+
+Attributes
+    b - black-box (unknown)
+    h - hierarchical
+    n - noncombinational
+    u - contains unmapped logic
+    E - extracted timing model
+    Q - Quick timing model (QTM)
+    s - synthetic operator
+
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+--------------------------------------------------------------------------------
+DELLN1X2_RVT       saed32rvt_c        5.08       2         10.17   
+DFFARX1_RVT        saed32rvt_c        7.12       2         14.23   n
+DFFARX2_RVT        saed32rvt_c        7.62       1          7.62   n
+INVX1_RVT          saed32rvt_c        1.27       1          1.27   
+NAND2X1_RVT        saed32rvt_c        2.54       1          2.54   
+NBUFFX4_RVT        saed32rvt_c        2.54       2          5.08   
+SHFILL1_RVT        saed32rvt_c        0.25   10905       2771.44   
+XNOR2X1_RVT        saed32rvt_c        4.32       1          4.32   
+XOR2X1_RVT         saed32rvt_c        4.32       1          4.32   
+uart_rx                             669.42       1        669.42   h
+uart_tx                             187.56       1        187.56   h
+--------------------------------------------------------------------------------
+Total 11 references                                      3677.97
+1

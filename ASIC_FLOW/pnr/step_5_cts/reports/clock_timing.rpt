@@ -1,0 +1,25 @@
+Information: The stitching and editing of coupling caps is turned OFF for design 'uart.ndm:temp_place_ends.design'. (TIM-125)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 329, routed nets = 1, across physical hierarchy nets = 0, parasitics cached nets = 3, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+****************************************
+Report : clock timing
+        -type skew
+        -nworst 1
+        -setup
+Design : uart
+Version: O-2018.06-SP1
+Date   : Mon Aug 31 20:36:21 2026
+****************************************
+
+  Mode: func
+  Clock: sys_clk
+
+  Clock Pin                                          Latency      Skew             Corner
+------------------------------------------------------------------------------------------
+  uart_rx_inst/uart_rx_counters_blk/edge_cnt_reg[0]/CLK
+                                                        0.00              rp-+       slow
+  uart_rx_inst/uart_rx_parity_check_blk/calc_par_bit_reg/CLK
+                                                        0.00      0.00    rp-+       slow
+
+------------------------------------------------------------------------------------------
+1

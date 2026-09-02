@@ -1,0 +1,48 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : uart
+Version: O-2018.06-SP1
+Date   : Sun Aug 30 23:55:33 2026
+****************************************
+
+  Startpoint: baud_cnt_reg_0_ (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: baud_cnt_reg_0_ (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: sys_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock sys_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  baud_cnt_reg_0_/CLK (DFFARX1_RVT)                                  0.05      0.00      0.00 r
+  baud_cnt_reg_0_/QN (DFFARX1_RVT)                                   0.02      0.04      0.04 f
+  n1 (net)                                          1      0.83
+  baud_cnt_reg_0_/D (DFFARX1_RVT)                                    0.02      0.00      0.04 f
+  data arrival time                                                                      0.04
+
+  clock sys_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  baud_cnt_reg_0_/CLK (DFFARX1_RVT)                                  0.05      0.00      0.00 r
+  clock uncertainty                                                            0.10      0.10
+  library hold time                                                           -0.00      0.10
+  data required time                                                                     0.10
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.10
+  data arrival time                                                                     -0.04
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                      -0.06
+
+
+1

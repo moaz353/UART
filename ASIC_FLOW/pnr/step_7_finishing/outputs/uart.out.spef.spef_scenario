@@ -1,0 +1,12 @@
+/home/ICer/Mo_AZ/UART_Project/pnr/step_7_finishing/outputs/uart.out.spef.tlup_max_125.spef for scenarios: 
+	 scenario: func_slow, corner type: late
+
+/home/ICer/Mo_AZ/UART_Project/pnr/step_7_finishing/outputs/uart.out.spef.tlup_max_-40.spef for scenarios: 
+	 scenario: func_slow, corner type: early
+
+/home/ICer/Mo_AZ/UART_Project/pnr/step_7_finishing/outputs/uart.out.spef.tlup_min_125.spef for scenarios: 
+	 scenario: func_fast, corner type: late
+
+/home/ICer/Mo_AZ/UART_Project/pnr/step_7_finishing/outputs/uart.out.spef.tlup_min_-40.spef for scenarios: 
+	 scenario: func_fast, corner type: early
+

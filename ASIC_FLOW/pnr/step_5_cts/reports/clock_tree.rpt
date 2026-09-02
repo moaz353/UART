@@ -1,0 +1,52 @@
+ Info: Initializing timer in CLOCK_SYN_MODE
+Information: The stitching and editing of coupling caps is turned OFF for design 'uart.ndm:temp_place_ends.design'. (TIM-125)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 329, routed nets = 1, across physical hierarchy nets = 0, parasitics cached nets = 1, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+****************************************
+Report : clock qor
+        -type summary
+Design : uart
+Version: O-2018.06-SP1
+Date   : Mon Aug 31 20:36:20 2026
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+===========================================
+==== Summary Reporting for Corner fast ====
+===========================================
+
+================================================== Summary Table for Corner fast ===================================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count
+                                                                Count      Area      Area
+------------------------------------------------------------------------------------------------------------------------------------
+### Mode: func, Scenario: func_fast
+sys_clk                                 M,D        31      1        0      0.00      0.00      0.00      0.00         0         0
+------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                         31      1        0      0.00      0.00      0.00      0.00         0         0
+
+
+===========================================
+==== Summary Reporting for Corner slow ====
+===========================================
+
+================================================== Summary Table for Corner slow ===================================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count
+                                                                Count      Area      Area
+------------------------------------------------------------------------------------------------------------------------------------
+### Mode: func, Scenario: func_slow
+sys_clk                                 M,D        31      1        0      0.00      0.00      0.00      0.00         0         0
+------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                         31      1        0      0.00      0.00      0.00      0.00         0         0
+
+
+1

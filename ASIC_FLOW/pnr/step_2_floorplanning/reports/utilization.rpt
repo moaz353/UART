@@ -1,0 +1,24 @@
+****************************************
+Report : report_utilization
+Design : uart
+Version: O-2018.06-SP1
+Date   : Sun Aug 30 22:39:38 2026
+****************************************
+Utilization Ratio:			0.2032
+Utilization options:
+ - Area calculation based on:		site_row of block temp_data_setup
+ - Categories of objects excluded:	hard_macros macro_keepouts soft_macros io_cells hard_blockages 
+Total Area:				3677.9720
+Total Capacity Area:			3677.9720
+Total Area of cells:			747.1834
+Area of excluded objects:
+ - hard_macros         :		0.0000
+ - macro_keepouts      :		0.0000
+ - soft_macros         :		0.0000
+ - io_cells            :		0.0000
+ - hard_blockages      :		0.0000
+
+Utilization of site-rows with:
+ - Site 'unit':				0.2032
+
+0.2032

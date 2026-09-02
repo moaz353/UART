@@ -1,0 +1,7 @@
+Command check_pg_drc started  at Sun Aug 30 23:13:05 2026
+Begin building search trees for block uart.ndm:temp_floorplan_ends.design
+Done building search trees for block uart.ndm:temp_floorplan_ends.design (time 0s)
+Command check_pg_drc finished at Sun Aug 30 23:13:05 2026
+CPU usage for check_pg_drc: 0.15 seconds ( 0.00 hours)
+Elapsed time for check_pg_drc: 0.15 seconds ( 0.00 hours)
+No errors found.

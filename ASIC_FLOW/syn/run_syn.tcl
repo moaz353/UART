@@ -1,0 +1,1 @@
+dc_shell -f scripts/master.tcl | tee "/home/ICer/Mo_AZ/UART_Project/syn/logs/syn.log"

@@ -1,0 +1,40 @@
+ 
+****************************************
+Report : reference
+Design : uart
+Version: O-2018.06-SP1
+Date   : Sat Aug 29 05:05:21 2026
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+DFFARX1_RVT        saed32rvt_tt1p05v25c
+                                  7.116032       2     14.232064  n
+DFFARX2_RVT        saed32rvt_tt1p05v25c
+                                  7.624320       1      7.624320  n
+INVX1_RVT          saed32rvt_tt1p05v25c
+                                  1.270720       1      1.270720  
+NAND2X0_RVT        saed32rvt_tt1p05v25c
+                                  1.524864       1      1.524864  
+NBUFFX2_RVT        saed32rvt_tt1p05v25c
+                                  2.033152       1      2.033152  
+XNOR2X1_RVT        saed32rvt_tt1p05v25c
+                                  4.320448       1      4.320448  
+XOR2X1_RVT         saed32rvt_tt1p05v25c
+                                  4.320448       1      4.320448  
+uart_rx                         524.299079       1    524.299079  h, n
+uart_tx                         187.558274       1    187.558274  h, n
+-----------------------------------------------------------------------------
+Total 9 references                                    747.183368
+1

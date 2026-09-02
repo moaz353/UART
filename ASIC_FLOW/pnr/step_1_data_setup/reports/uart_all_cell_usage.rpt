@@ -1,0 +1,304 @@
+****************************************
+Report : cell
+Design : uart
+Version: O-2018.06-SP1
+Date   : Sun Aug 30 22:31:15 2026
+****************************************
+
+Attributes
+    b - black-box (unknown)
+    h - hierarchical
+    n - noncombinational
+    u - contains unmapped logic
+    E - extracted timing model
+    Q - Quick timing model
+    U - Unbound (missing)
+    s - user size_only
+    S - implicit size_only
+    d - user dont_touch
+    D - derived dont_touch
+    o - synthetic operator
+
+
+Cell                      Reference       Library          Attributes
+--------------------------------------------------------------------------------
+baud_cnt_reg_0_           DFFARX1_RVT     saed32rvt_c      n, S
+baud_cnt_reg_1_           DFFARX1_RVT     saed32rvt_c      n, S
+U5                        NAND2X0_RVT     saed32rvt_c      
+uart_tx_inst              uart_tx                          h
+uart_tx_controller_mod    uart_tx_controller               h
+U10                       NAND2X0_RVT     saed32rvt_c      
+U11                       NAND3X0_RVT     saed32rvt_c      
+U12                       NAND2X0_RVT     saed32rvt_c      
+U13                       OA21X1_RVT      saed32rvt_c      
+U14                       NAND2X0_RVT     saed32rvt_c      
+U15                       NAND4X0_RVT     saed32rvt_c      
+U16                       AND2X1_RVT      saed32rvt_c      
+U17                       NAND3X0_RVT     saed32rvt_c      
+U18                       NAND2X0_RVT     saed32rvt_c      
+U19                       NAND4X0_RVT     saed32rvt_c      
+U20                       AO21X1_RVT      saed32rvt_c      
+U21                       AO21X1_RVT      saed32rvt_c      
+U22                       NAND2X0_RVT     saed32rvt_c      
+U23                       NAND3X0_RVT     saed32rvt_c      
+U24                       AND3X1_RVT      saed32rvt_c      
+U25                       NAND2X0_RVT     saed32rvt_c      
+U26                       NAND3X0_RVT     saed32rvt_c      
+U27                       NAND2X0_RVT     saed32rvt_c      
+U28                       AND2X1_RVT      saed32rvt_c      
+state_reg[2]              DFFX1_RVT       saed32rvt_c      n
+state_reg[1]              DFFX1_RVT       saed32rvt_c      n
+state_reg[0]              DFFX1_RVT       saed32rvt_c      n
+U3                        INVX1_RVT       saed32rvt_c      
+U4                        INVX1_RVT       saed32rvt_c      
+U5                        XNOR2X1_RVT     saed32rvt_c      
+U6                        INVX1_RVT       saed32rvt_c      
+U7                        INVX1_RVT       saed32rvt_c      
+U8                        INVX1_RVT       saed32rvt_c      
+uart_tx_parity_bit_mod    uart_tx_parity_bit               h
+par_bit_reg               DFFSSRX1_RVT    saed32rvt_c      n
+U4                        XNOR3X1_RVT     saed32rvt_c      
+U5                        XNOR3X1_RVT     saed32rvt_c      
+U6                        XNOR3X1_RVT     saed32rvt_c      
+U7                        XNOR2X1_RVT     saed32rvt_c      
+U8                        XOR2X1_RVT      saed32rvt_c      
+uart_tx_serializer_mod    uart_tx_serializer               h
+ser_data_reg              DFFARX1_RVT     saed32rvt_c      n
+ser_counter_reg[1]        DFFARX1_RVT     saed32rvt_c      n
+ser_counter_reg[2]        DFFARX1_RVT     saed32rvt_c      n
+ser_done_reg              DFFARX1_RVT     saed32rvt_c      n
+U5                        AND3X1_RVT      saed32rvt_c      
+U6                        AO22X1_RVT      saed32rvt_c      
+U7                        AO22X1_RVT      saed32rvt_c      
+U8                        AND2X1_RVT      saed32rvt_c      
+U9                        AND2X1_RVT      saed32rvt_c      
+U10                       NOR2X0_RVT      saed32rvt_c      
+U11                       OR2X1_RVT       saed32rvt_c      
+ser_counter_reg[0]        DFFARX1_RVT     saed32rvt_c      n
+U3                        INVX1_RVT       saed32rvt_c      
+U4                        XNOR2X1_RVT     saed32rvt_c      
+U12                       AO22X1_RVT      saed32rvt_c      
+U13                       AO22X1_RVT      saed32rvt_c      
+U14                       AO22X1_RVT      saed32rvt_c      
+U15                       AO22X1_RVT      saed32rvt_c      
+U16                       AO22X1_RVT      saed32rvt_c      
+U17                       AO22X1_RVT      saed32rvt_c      
+U18                       AO22X1_RVT      saed32rvt_c      
+uart_tx_mux4x1_mod        uart_tx_mux4x1                   h
+U3                        AO22X1_RVT      saed32rvt_c      
+U4                        AO22X1_RVT      saed32rvt_c      
+U5                        AO22X1_RVT      saed32rvt_c      
+U1                        INVX1_RVT       saed32rvt_c      
+U2                        INVX1_RVT       saed32rvt_c      
+U1                        NBUFFX2_RVT     saed32rvt_c      
+uart_rx_inst              uart_rx                          h
+uart_rx_controller_blk    uart_rx_controller               h
+state_reg[0]              DFFSSRX1_RVT    saed32rvt_c      n, S
+state_reg[2]              DFFSSRX1_RVT    saed32rvt_c      n, S
+state_reg[1]              DFFSSRX1_RVT    saed32rvt_c      n, S
+U7                        NOR4X1_RVT      saed32rvt_c      
+U24                       NAND3X0_RVT     saed32rvt_c      
+U25                       NAND2X0_RVT     saed32rvt_c      
+U26                       AO21X1_RVT      saed32rvt_c      
+U27                       NAND2X0_RVT     saed32rvt_c      
+U28                       AO22X1_RVT      saed32rvt_c      
+U30                       AND3X1_RVT      saed32rvt_c      
+U31                       NAND3X0_RVT     saed32rvt_c      
+U32                       OR3X1_RVT       saed32rvt_c      
+U33                       NAND4X0_RVT     saed32rvt_c      
+U34                       OR3X1_RVT       saed32rvt_c      
+U35                       NAND2X0_RVT     saed32rvt_c      
+U36                       NAND4X0_RVT     saed32rvt_c      
+U37                       AND2X1_RVT      saed32rvt_c      
+U38                       NAND2X0_RVT     saed32rvt_c      
+U39                       AOI21X1_RVT     saed32rvt_c      
+U40                       OA22X1_RVT      saed32rvt_c      
+U41                       OR2X1_RVT       saed32rvt_c      
+U42                       NAND2X0_RVT     saed32rvt_c      
+U43                       NAND2X0_RVT     saed32rvt_c      
+U44                       NAND3X0_RVT     saed32rvt_c      
+U46                       NAND2X0_RVT     saed32rvt_c      
+U47                       NAND2X0_RVT     saed32rvt_c      
+U48                       NAND4X0_RVT     saed32rvt_c      
+U49                       NAND2X0_RVT     saed32rvt_c      
+U50                       NAND3X0_RVT     saed32rvt_c      
+U51                       AND2X1_RVT      saed32rvt_c      
+U52                       NAND2X0_RVT     saed32rvt_c      
+U53                       NAND4X0_RVT     saed32rvt_c      
+U54                       OR3X1_RVT       saed32rvt_c      
+U55                       AND2X1_RVT      saed32rvt_c      
+U56                       NAND2X0_RVT     saed32rvt_c      
+U3                        INVX1_RVT       saed32rvt_c      
+U4                        AND2X2_RVT      saed32rvt_c      
+U6                        INVX1_RVT       saed32rvt_c      
+U8                        INVX1_RVT       saed32rvt_c      
+U9                        INVX1_RVT       saed32rvt_c      
+U10                       INVX1_RVT       saed32rvt_c      
+U11                       INVX1_RVT       saed32rvt_c      
+U12                       INVX1_RVT       saed32rvt_c      
+U13                       INVX1_RVT       saed32rvt_c      
+U14                       INVX1_RVT       saed32rvt_c      
+U15                       INVX1_RVT       saed32rvt_c      
+U16                       OA22X1_RVT      saed32rvt_c      
+U17                       INVX1_RVT       saed32rvt_c      
+U18                       INVX1_RVT       saed32rvt_c      
+U19                       INVX1_RVT       saed32rvt_c      
+U20                       INVX1_RVT       saed32rvt_c      
+U21                       INVX1_RVT       saed32rvt_c      
+U22                       OA21X1_RVT      saed32rvt_c      
+U23                       INVX1_RVT       saed32rvt_c      
+U29                       NBUFFX2_RVT     saed32rvt_c      
+U45                       INVX1_RVT       saed32rvt_c      
+uart_rx_counters_blk      uart_rx_counters                 h
+edge_cnt_reg[0]           DFFARX1_RVT     saed32rvt_c      n, S
+edge_cnt_reg[1]           DFFARX1_RVT     saed32rvt_c      n, S
+edge_cnt_reg[2]           DFFARX1_RVT     saed32rvt_c      n, S
+bit_cnt_reg[0]            DFFARX1_RVT     saed32rvt_c      n, S
+bit_cnt_reg[1]            DFFARX1_RVT     saed32rvt_c      n, S
+bit_cnt_reg[2]            DFFARX1_RVT     saed32rvt_c      n, S
+bit_cnt_reg[3]            DFFARX1_RVT     saed32rvt_c      n, S
+data_valid_cnt_reg[0]     DFFARX1_RVT     saed32rvt_c      n, S
+data_valid_cnt_reg[1]     DFFARX1_RVT     saed32rvt_c      n, S
+data_valid_cnt_reg[2]     DFFARX1_RVT     saed32rvt_c      n, S
+U4                        OR2X1_RVT       saed32rvt_c      
+U6                        NAND2X0_RVT     saed32rvt_c      
+U13                       AO22X1_RVT      saed32rvt_c      
+U14                       AND3X1_RVT      saed32rvt_c      
+U16                       AO21X1_RVT      saed32rvt_c      
+U17                       AO22X1_RVT      saed32rvt_c      
+U18                       AND2X1_RVT      saed32rvt_c      
+U20                       AO22X1_RVT      saed32rvt_c      
+U21                       AO22X1_RVT      saed32rvt_c      
+U22                       AND2X1_RVT      saed32rvt_c      
+U25                       NAND4X0_RVT     saed32rvt_c      
+U26                       AO21X1_RVT      saed32rvt_c      
+U27                       AND4X1_RVT      saed32rvt_c      
+U29                       AO21X1_RVT      saed32rvt_c      
+U30                       AO22X1_RVT      saed32rvt_c      
+U31                       AND2X1_RVT      saed32rvt_c      
+U33                       AO22X1_RVT      saed32rvt_c      
+U34                       AO22X1_RVT      saed32rvt_c      
+U36                       AND2X1_RVT      saed32rvt_c      
+U3                        INVX1_RVT       saed32rvt_c      
+U5                        NBUFFX2_RVT     saed32rvt_c      
+U7                        INVX1_RVT       saed32rvt_c      
+U8                        XOR2X1_RVT      saed32rvt_c      
+U9                        INVX1_RVT       saed32rvt_c      
+U10                       XOR2X1_RVT      saed32rvt_c      
+U11                       OAI22X1_RVT     saed32rvt_c      
+U12                       AOI21X1_RVT     saed32rvt_c      
+U15                       NAND2X0_RVT     saed32rvt_c      
+U19                       XOR2X1_RVT      saed32rvt_c      
+uart_rx_data_sampling_blk uart_rx_data_sampling            h
+three_samps_data_reg[2]   DFFARX1_RVT     saed32rvt_c      n, S
+three_samps_data_reg[1]   DFFARX1_RVT     saed32rvt_c      n, S
+three_samps_data_reg[0]   DFFARX1_RVT     saed32rvt_c      n, S
+sampled_bit_reg           DFFARX1_RVT     saed32rvt_c      n, S
+U3                        AO22X1_RVT      saed32rvt_c      
+U4                        AO22X1_RVT      saed32rvt_c      
+U5                        OR2X1_RVT       saed32rvt_c      
+U7                        NAND4X0_RVT     saed32rvt_c      
+U9                        AO22X1_RVT      saed32rvt_c      
+U11                       NAND4X0_RVT     saed32rvt_c      
+U13                       AO22X1_RVT      saed32rvt_c      
+U15                       NAND2X0_RVT     saed32rvt_c      
+U17                       AO22X1_RVT      saed32rvt_c      
+U19                       NAND2X0_RVT     saed32rvt_c      
+U20                       AND3X1_RVT      saed32rvt_c      
+U6                        INVX1_RVT       saed32rvt_c      
+U8                        INVX1_RVT       saed32rvt_c      
+U10                       INVX1_RVT       saed32rvt_c      
+U12                       INVX1_RVT       saed32rvt_c      
+U14                       INVX1_RVT       saed32rvt_c      
+U16                       INVX1_RVT       saed32rvt_c      
+U18                       INVX1_RVT       saed32rvt_c      
+U21                       OR4X1_RVT       saed32rvt_c      
+uart_rx_parity_check_blk  uart_rx_parity_check             h
+calc_par_bit_reg          DFFARX1_RVT     saed32rvt_c      n, S
+U8                        AND4X1_RVT      saed32rvt_c      
+U9                        AND2X1_RVT      saed32rvt_c      
+U10                       AO22X1_RVT      saed32rvt_c      
+U11                       AO22X1_RVT      saed32rvt_c      
+U12                       NAND2X0_RVT     saed32rvt_c      
+U13                       NAND4X0_RVT     saed32rvt_c      
+U3                        INVX1_RVT       saed32rvt_c      
+U4                        INVX1_RVT       saed32rvt_c      
+U5                        INVX1_RVT       saed32rvt_c      
+U6                        INVX1_RVT       saed32rvt_c      
+U7                        XOR2X1_RVT      saed32rvt_c      
+uart_rx_start_check_blk   uart_rx_start_check              h
+str_glitch_reg            DFFARX1_RVT     saed32rvt_c      n, S
+U3                        AND2X1_RVT      saed32rvt_c      
+uart_rx_stop_check_blk    uart_rx_stop_check               h
+stp_err_reg               DFFARX1_RVT     saed32rvt_c      n, S
+U3                        AO21X1_RVT      saed32rvt_c      
+U4                        INVX1_RVT       saed32rvt_c      
+uart_rx_deserializer_blk  uart_rx_deserializer             h
+p_data_temp_reg[7]        DFFARX1_RVT     saed32rvt_c      n, S
+p_data_temp_reg[6]        DFFARX1_RVT     saed32rvt_c      n, S
+p_data_temp_reg[5]        DFFARX1_RVT     saed32rvt_c      n, S
+p_data_temp_reg[4]        DFFARX1_RVT     saed32rvt_c      n, S
+p_data_temp_reg[3]        DFFARX1_RVT     saed32rvt_c      n, S
+p_data_temp_reg[2]        DFFARX1_RVT     saed32rvt_c      n, S
+p_data_temp_reg[1]        DFFARX1_RVT     saed32rvt_c      n, S
+p_data_temp_reg[0]        DFFARX1_RVT     saed32rvt_c      n, S
+U16                       AND2X1_RVT      saed32rvt_c      
+U17                       AND2X1_RVT      saed32rvt_c      
+U18                       AND2X1_RVT      saed32rvt_c      
+U19                       AND2X1_RVT      saed32rvt_c      
+U20                       AND2X1_RVT      saed32rvt_c      
+U21                       AND2X1_RVT      saed32rvt_c      
+U22                       AND2X1_RVT      saed32rvt_c      
+U23                       AND2X1_RVT      saed32rvt_c      
+U24                       OA21X1_RVT      saed32rvt_c      
+U25                       AO22X1_RVT      saed32rvt_c      
+U26                       NAND3X0_RVT     saed32rvt_c      
+U27                       AO22X1_RVT      saed32rvt_c      
+U28                       NAND3X0_RVT     saed32rvt_c      
+U29                       AO22X1_RVT      saed32rvt_c      
+U30                       NAND3X0_RVT     saed32rvt_c      
+U31                       AO22X1_RVT      saed32rvt_c      
+U32                       NAND3X0_RVT     saed32rvt_c      
+U33                       AND2X1_RVT      saed32rvt_c      
+U34                       AO22X1_RVT      saed32rvt_c      
+U35                       NAND2X0_RVT     saed32rvt_c      
+U36                       AO22X1_RVT      saed32rvt_c      
+U37                       NAND2X0_RVT     saed32rvt_c      
+U38                       AND3X1_RVT      saed32rvt_c      
+U39                       AO22X1_RVT      saed32rvt_c      
+U40                       NAND2X0_RVT     saed32rvt_c      
+U41                       AO22X1_RVT      saed32rvt_c      
+U42                       NAND2X0_RVT     saed32rvt_c      
+U43                       AND3X1_RVT      saed32rvt_c      
+U44                       AND4X1_RVT      saed32rvt_c      
+U45                       NOR3X0_RVT      saed32rvt_c      
+U46                       AND3X1_RVT      saed32rvt_c      
+U47                       AO21X1_RVT      saed32rvt_c      
+U3                        INVX1_RVT       saed32rvt_c      
+U5                        INVX1_RVT       saed32rvt_c      
+U6                        NBUFFX2_RVT     saed32rvt_c      
+U7                        INVX1_RVT       saed32rvt_c      
+U8                        INVX1_RVT       saed32rvt_c      
+U9                        INVX1_RVT       saed32rvt_c      
+U10                       INVX1_RVT       saed32rvt_c      
+U11                       INVX1_RVT       saed32rvt_c      
+U12                       INVX1_RVT       saed32rvt_c      
+U13                       INVX1_RVT       saed32rvt_c      
+U14                       INVX1_RVT       saed32rvt_c      
+U15                       INVX1_RVT       saed32rvt_c      
+U48                       INVX1_RVT       saed32rvt_c      
+U49                       INVX1_RVT       saed32rvt_c      
+U50                       INVX1_RVT       saed32rvt_c      
+U51                       INVX1_RVT       saed32rvt_c      
+U52                       INVX1_RVT       saed32rvt_c      
+U1                        INVX1_RVT       saed32rvt_c      
+U3                        NBUFFX2_RVT     saed32rvt_c      
+baud_cnt_reg_2_           DFFARX2_RVT     saed32rvt_c      n, S
+U6                        INVX1_RVT       saed32rvt_c      
+U8                        NBUFFX2_RVT     saed32rvt_c      
+U9                        XNOR2X1_RVT     saed32rvt_c      
+U10                       XOR2X1_RVT      saed32rvt_c      
+--------------------------------------------------------------------------------
+Total 276 cells
+
+1

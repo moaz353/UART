@@ -1,0 +1,80 @@
+Loading db file '/home/ICer/Mo_AZ/Common/ALL-LIBs/PDKs_30nm/hierar_NDM_sead_32/SAED32/STD/saed32rvt_tt1p05v25c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : uart
+Version: O-2018.06-SP1
+Date   : Sat Aug 29 05:05:21 2026
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /home/ICer/Mo_AZ/Common/ALL-LIBs/PDKs_30nm/hierar_NDM_sead_32/SAED32/STD/saed32rvt_tt1p05v25c.db)
+
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+uart                   ForQA             saed32rvt_tt1p05v25c
+uart_tx                ForQA             saed32rvt_tt1p05v25c
+uart_rx                8000              saed32rvt_tt1p05v25c
+uart_tx_controller     ForQA             saed32rvt_tt1p05v25c
+uart_tx_parity_bit     ForQA             saed32rvt_tt1p05v25c
+uart_tx_serializer     ForQA             saed32rvt_tt1p05v25c
+uart_tx_mux4x1         ForQA             saed32rvt_tt1p05v25c
+uart_rx_controller     ForQA             saed32rvt_tt1p05v25c
+uart_rx_counters       ForQA             saed32rvt_tt1p05v25c
+uart_rx_data_sampling  ForQA             saed32rvt_tt1p05v25c
+uart_rx_parity_check   ForQA             saed32rvt_tt1p05v25c
+uart_rx_start_check    ForQA             saed32rvt_tt1p05v25c
+uart_rx_stop_check     ForQA             saed32rvt_tt1p05v25c
+uart_rx_deserializer   ForQA             saed32rvt_tt1p05v25c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+uart                                      1.195   26.882 6.91e+07   97.227 100.0
+  uart_rx_inst (uart_rx)                  0.795   22.652 4.58e+07   69.290  71.3
+    uart_rx_deserializer_blk (uart_rx_deserializer)
+                                       6.88e-02    5.750 1.20e+07   17.809  18.3
+    uart_rx_stop_check_blk (uart_rx_stop_check)
+                                       4.80e-04    0.713 1.18e+06    1.896   1.9
+    uart_rx_start_check_blk (uart_rx_start_check)
+                                       6.11e-04    0.713 1.02e+06    1.738   1.8
+    uart_rx_parity_check_blk (uart_rx_parity_check)
+                                       4.42e-02    0.836 2.33e+06    3.215   3.3
+    uart_rx_data_sampling_blk (uart_rx_data_sampling)
+                                          0.101    3.008 6.12e+06    9.233   9.5
+    uart_rx_counters_blk (uart_rx_counters)
+                                          0.420    8.044 1.41e+07   22.546  23.2
+    uart_rx_controller_blk (uart_rx_controller)
+                                          0.110    3.566 8.54e+06   12.220  12.6
+  uart_tx_inst (uart_tx)                  0.190    1.403 1.87e+07   20.320  20.9
+    uart_tx_mux4x1_mod (uart_tx_mux4x1)
+                                          0.000    0.000 8.35e+05    0.835   0.9
+    uart_tx_serializer_mod (uart_tx_serializer)
+                                       2.49e-02    0.326 7.96e+06    8.310   8.5
+    uart_tx_parity_bit_mod (uart_tx_parity_bit)
+                                       9.70e-02    0.909 4.06e+06    5.065   5.2
+    uart_tx_controller_mod (uart_tx_controller)
+                                       1.86e-02    0.148 5.36e+06    5.527   5.7
+1

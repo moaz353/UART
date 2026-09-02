@@ -1,0 +1,65 @@
+ 
+****************************************
+Report : area
+Design : uart
+Version: O-2018.06-SP1
+Date   : Sat Aug 29 05:05:20 2026
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /home/ICer/Mo_AZ/Common/ALL-LIBs/PDKs_30nm/hierar_NDM_sead_32/SAED32/STD/saed32rvt_tt1p05v25c.db)
+
+Number of ports:                          203
+Number of nets:                           476
+Number of cells:                          283
+Number of combinational cells:            223
+Number of sequential cells:                47
+Number of macros/black boxes:               0
+Number of buf/inv:                         64
+Number of references:                       9
+
+Combinational area:                463.558659
+Buf/Inv area:                       85.900673
+Noncombinational area:             283.624709
+Macro/Black Box area:                0.000000
+Net Interconnect area:              85.831025
+
+Total cell area:                   747.183368
+Total area:                        833.014394
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------------------
+uart                               747.1834    100.0   13.4696    21.8564  0.0000  uart
+uart_rx_inst                       524.2991     70.2    3.3039     0.0000  0.0000  uart_rx
+uart_rx_inst/uart_rx_controller_blk
+                                   116.1438     15.5   94.7957    21.3481  0.0000  uart_rx_controller
+uart_rx_inst/uart_rx_counters_blk  141.5582     18.9   70.3979    71.1603  0.0000  uart_rx_counters
+uart_rx_inst/uart_rx_data_sampling_blk
+                                    65.0609      8.7   36.5967    28.4641  0.0000  uart_rx_data_sampling
+uart_rx_inst/uart_rx_deserializer_blk
+                                   148.4201     19.9   91.4918    56.9283  0.0000  uart_rx_deserializer
+uart_rx_inst/uart_rx_parity_check_blk
+                                    29.7348      4.0   22.6188     7.1160  0.0000  uart_rx_parity_check
+uart_rx_inst/uart_rx_start_check_blk
+                                     9.1492      1.2    2.0332     7.1160  0.0000  uart_rx_start_check
+uart_rx_inst/uart_rx_stop_check_blk
+                                    10.9282      1.5    3.8122     7.1160  0.0000  uart_rx_stop_check
+uart_tx_inst                       187.5583     25.1    2.0332     0.0000  0.0000  uart_tx
+uart_tx_inst/uart_tx_controller_mod
+                                    66.3316      8.9   46.5084    19.8232  0.0000  uart_tx_controller
+uart_tx_inst/uart_tx_mux4x1_mod     10.1658      1.4   10.1658     0.0000  0.0000  uart_tx_mux4x1
+uart_tx_inst/uart_tx_parity_bit_mod
+                                    34.0553      4.6   26.9393     7.1160  0.0000  uart_tx_parity_bit
+uart_tx_inst/uart_tx_serializer_mod
+                                    74.9725     10.0   39.3923    35.5802  0.0000  uart_tx_serializer
+--------------------------------  ---------  -------  --------  ---------  ------  ---------------------
+Total                                                 463.5587   283.6247  0.0000
+
+1

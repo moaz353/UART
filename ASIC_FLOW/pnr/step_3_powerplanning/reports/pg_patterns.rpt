@@ -1,0 +1,52 @@
+#------------------------------------------#
+Pattern Name: M1_rail
+Type: Standard Cell Rail Pattern
+Rail Width: @wtop @wbottom 
+Rail Layers: M1 
+Rail Shift: undefined undefined 
+Rail Masks: no_mask no_mask 
+Rail pin DRC option: false
+Mark as follow pin option: false
+Parameters: wtop wbottom 
+#------------------------------------------#
+Pattern Name: MID_MESH_HORIZONTAL
+Type: Mesh Pattern
+Parameters: 
+Layers: 
+{ {horizontal_layer : M5} {width : {0.3 }} {spacing : interleaving} {trim : true}    {pitch : 5} {offset : 0.5} } 
+Via Rules: 
+{intersection: all} {via_master : {default}}
+#------------------------------------------#
+Pattern Name: TOP_MESH_HORIZONTAL
+Type: Mesh Pattern
+Parameters: 
+Layers: 
+{ {horizontal_layer : M7} {width : {0.4 }} {spacing : interleaving} {trim : true}    {pitch : 5} {offset : 0.5} } 
+Via Rules: 
+{intersection: all} {via_master : {default}}
+#------------------------------------------#
+Pattern Name: TOP_MESH_VERTICAL
+Type: Mesh Pattern
+Parameters: 
+Layers: 
+{ {vertical_layer : M6} {width : {0.3 }} {spacing : interleaving} {trim : true}    {pitch : 5} {offset : 0.5} } 
+Via Rules: 
+{intersection: all} {via_master : {default}}
+#------------------------------------------#
+Pattern Name: ring_pattern
+Type: Ring Pattern
+Symbolic Nets: 
+Ring Width:
+	{side: horizontal}{width: 1}
+	{side: vertical}{width: 1}
+Ring Layer:
+	{side: horizontal}{layer: M7}
+	{side: vertical}{layer: M6}
+Ring Spacing:
+	{side: horizontal}{spacing: 3}
+	{side: vertical}{spacing: 3}
+Corner Bridge: false
+Via Rules: 
+	{intersection: all} {via_master : {default}}
+Parameters: 
+#------------------------------------------#

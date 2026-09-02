@@ -1,0 +1,75 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : uart
+Version: O-2018.06-SP1
+Date   : Mon Aug 31 22:06:30 2026
+****************************************
+Information: Doing activity propagation for mode 'func' and corner 'slow' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario func_slow (POW-052)
+Scenario func_slow, iteration 1: expecting at least 5
+Scenario func_slow, iteration 2: expecting at least 6
+Scenario func_slow, iteration 3: expecting at least 6
+Scenario func_slow, iteration 4: expecting at least 6
+Scenario func_slow, iteration 5: expecting at least 6
+Scenario func_slow, iteration 6: expecting at least 6
+Scenario func_slow, iteration 7: expecting at least 7
+Mode: func
+Corner: slow
+Scenario: func_slow
+Voltage: 0.95
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port D on cell baud_cnt_reg_0_ for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.025501 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port D on cell baud_cnt_reg_1_ for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.024700 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell baud_cnt_reg_1_ for parameter Cout. Lowest table value = 0.000100, highest table value = 0.008000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port D on cell uart_tx_inst/uart_tx_controller_mod/state_reg[2] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.055733 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port D on cell uart_tx_inst/uart_tx_controller_mod/state_reg[1] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.053215 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port D on cell uart_tx_inst/uart_tx_controller_mod/state_reg[0] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.065193 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CLK on cell uart_tx_inst/uart_tx_parity_bit_mod/par_bit_reg for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.077801 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell uart_tx_inst/uart_tx_parity_bit_mod/par_bit_reg for parameter Cout. Lowest table value = 0.000100, highest table value = 0.008000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port D on cell uart_tx_inst/uart_tx_serializer_mod/ser_data_reg for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.030384 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell uart_tx_inst/uart_tx_serializer_mod/ser_data_reg for parameter Cout. Lowest table value = 0.000100, highest table value = 0.008000, value = 0.000000 (POW-046)
+Note - message 'POW-046' limit (10) exceeded. Remainder will be suppressed.
+Warning: Fall toggles on pin uart_tx_inst/uart_tx_serializer_mod/ser_done_reg/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin uart_rx_inst/uart_rx_counters_blk/data_valid_cnt_reg[0]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin uart_rx_inst/uart_rx_stop_check_blk/stp_err_reg/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[6]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[5]/QN are impossible given input states; converted to rise toggles. (POW-069)
+
+  Cell Internal Power    = 2.21e+07 pW ( 91.7%)
+  Net Switching Power    = 2.00e+06 pW (  8.3%)
+Total Dynamic Power      = 2.41e+07 pW (100.0%)
+
+Cell Leakage Power       = 4.60e+07 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)      
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)      
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)      
+clock_network             1.79e+07               0.00e+00               0.00e+00               1.79e+07    ( 25.6%)      
+register                  9.22e+05               4.84e+05               1.48e+07               1.63e+07    ( 23.2%)      
+sequential                6.17e+05               3.73e+04               4.43e+06               5.08e+06    (  7.3%)      
+combinational             2.63e+06               1.48e+06               2.67e+07               3.08e+07    ( 44.0%)      
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     2.21e+07 pW            2.00e+06 pW            4.60e+07 pW            7.01e+07 pW
+1

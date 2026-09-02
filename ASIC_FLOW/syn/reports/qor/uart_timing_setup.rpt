@@ -1,0 +1,1392 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : uart
+Version: O-2018.06-SP1
+Date   : Sat Aug 29 05:05:20 2026
+****************************************
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: rst_n (input port clocked by sys_clk)
+  Endpoint: tx_out (output port clocked by sys_clk)
+  Path Group: COMBO
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_tx            ForQA                 saed32rvt_tt1p05v25c
+  uart_tx_controller ForQA                 saed32rvt_tt1p05v25c
+  uart_tx_mux4x1     ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  rst_n (in)                                              0.00       2.00 r
+  U8/Y (NBUFFX2_RVT)                                      0.03       2.04 r
+  uart_tx_inst/rst_n (uart_tx)                            0.00       2.04 r
+  uart_tx_inst/U1/Y (NBUFFX2_RVT)                         0.04       2.08 r
+  uart_tx_inst/uart_tx_controller_mod/rst_n (uart_tx_controller)     0.00     2.08 r
+  uart_tx_inst/uart_tx_controller_mod/U28/Y (AND2X1_RVT)     0.04     2.12 r
+  uart_tx_inst/uart_tx_controller_mod/U12/Y (NAND2X0_RVT)     0.06     2.18 f
+  uart_tx_inst/uart_tx_controller_mod/mux_sel[0] (uart_tx_controller)     0.00     2.18 f
+  uart_tx_inst/uart_tx_mux4x1_mod/mux_sel[0] (uart_tx_mux4x1)     0.00     2.18 f
+  uart_tx_inst/uart_tx_mux4x1_mod/U1/Y (INVX1_RVT)        0.03       2.21 r
+  uart_tx_inst/uart_tx_mux4x1_mod/U5/Y (AO22X1_RVT)       0.04       2.25 r
+  uart_tx_inst/uart_tx_mux4x1_mod/U3/Y (AO22X1_RVT)       0.04       2.30 r
+  uart_tx_inst/uart_tx_mux4x1_mod/mux_out (uart_tx_mux4x1)     0.00     2.30 r
+  uart_tx_inst/tx_out (uart_tx)                           0.00       2.30 r
+  tx_out (out)                                            0.00       2.30 r
+  data arrival time                                                  2.30
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -2.00       7.80
+  data required time                                                 7.80
+  --------------------------------------------------------------------------
+  data required time                                                 7.80
+  data arrival time                                                 -2.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        5.50
+
+
+  Startpoint: rst_n (input port clocked by sys_clk)
+  Endpoint: busy (output port clocked by sys_clk)
+  Path Group: COMBO
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_tx            ForQA                 saed32rvt_tt1p05v25c
+  uart_tx_controller ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  rst_n (in)                                              0.00       2.00 r
+  U8/Y (NBUFFX2_RVT)                                      0.03       2.04 r
+  uart_tx_inst/rst_n (uart_tx)                            0.00       2.04 r
+  uart_tx_inst/U1/Y (NBUFFX2_RVT)                         0.04       2.08 r
+  uart_tx_inst/uart_tx_controller_mod/rst_n (uart_tx_controller)     0.00     2.08 r
+  uart_tx_inst/uart_tx_controller_mod/U28/Y (AND2X1_RVT)     0.04     2.12 r
+  uart_tx_inst/uart_tx_controller_mod/U12/Y (NAND2X0_RVT)     0.06     2.18 f
+  uart_tx_inst/uart_tx_controller_mod/U10/Y (NAND2X0_RVT)     0.03     2.22 r
+  uart_tx_inst/uart_tx_controller_mod/busy (uart_tx_controller)     0.00     2.22 r
+  uart_tx_inst/busy (uart_tx)                             0.00       2.22 r
+  busy (out)                                              0.00       2.22 r
+  data arrival time                                                  2.22
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -2.00       7.80
+  data required time                                                 7.80
+  --------------------------------------------------------------------------
+  data required time                                                 7.80
+  data arrival time                                                 -2.22
+  --------------------------------------------------------------------------
+  slack (MET)                                                        5.58
+
+
+  Startpoint: par_en (input port clocked by sys_clk)
+  Endpoint: rx_p_data[1]
+            (output port clocked by sys_clk)
+  Path Group: COMBO
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_deserializer ForQA               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 f
+  par_en (in)                                             0.01       2.01 f
+  uart_rx_inst/par_en (uart_rx)                           0.00       2.01 f
+  uart_rx_inst/uart_rx_deserializer_blk/par_en (uart_rx_deserializer)     0.00     2.01 f
+  uart_rx_inst/uart_rx_deserializer_blk/U7/Y (INVX1_RVT)     0.01     2.03 r
+  uart_rx_inst/uart_rx_deserializer_blk/U24/Y (OA21X1_RVT)     0.03     2.06 r
+  uart_rx_inst/uart_rx_deserializer_blk/p_data[1] (uart_rx_deserializer)     0.00     2.06 r
+  uart_rx_inst/p_data[1] (uart_rx)                        0.00       2.06 r
+  rx_p_data[1] (out)                                      0.00       2.06 r
+  data arrival time                                                  2.06
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -2.00       7.80
+  data required time                                                 7.80
+  --------------------------------------------------------------------------
+  data required time                                                 7.80
+  data arrival time                                                 -2.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        5.74
+
+
+  Startpoint: par_en (input port clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[1]
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: INPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  par_en (in)                                             0.01       2.01 r
+  uart_rx_inst/par_en (uart_rx)                           0.00       2.01 r
+  uart_rx_inst/uart_rx_controller_blk/par_en (uart_rx_controller)     0.00     2.01 r
+  uart_rx_inst/uart_rx_controller_blk/U15/Y (INVX1_RVT)     0.01     2.02 f
+  uart_rx_inst/uart_rx_controller_blk/U30/Y (AND3X1_RVT)     0.04     2.06 f
+  uart_rx_inst/uart_rx_controller_blk/U16/Y (OA22X1_RVT)     0.04     2.11 f
+  uart_rx_inst/uart_rx_controller_blk/state_reg[1]/SETB (DFFSSRX1_RVT)     0.00     2.11 f
+  data arrival time                                                  2.11
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_controller_blk/state_reg[1]/CLK (DFFSSRX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.11       9.69
+  data required time                                                 9.69
+  --------------------------------------------------------------------------
+  data required time                                                 9.69
+  data arrival time                                                 -2.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.58
+
+
+  Startpoint: par_en (input port clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[2]
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: INPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 f
+  par_en (in)                                             0.01       2.01 f
+  uart_rx_inst/par_en (uart_rx)                           0.00       2.01 f
+  uart_rx_inst/uart_rx_controller_blk/par_en (uart_rx_controller)     0.00     2.01 f
+  uart_rx_inst/uart_rx_controller_blk/U15/Y (INVX1_RVT)     0.01     2.03 r
+  uart_rx_inst/uart_rx_controller_blk/U30/Y (AND3X1_RVT)     0.04     2.07 r
+  uart_rx_inst/uart_rx_controller_blk/U28/Y (AO22X1_RVT)     0.05     2.12 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/D (DFFSSRX1_RVT)     0.00     2.12 r
+  data arrival time                                                  2.12
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/CLK (DFFSSRX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.09       9.71
+  data required time                                                 9.71
+  --------------------------------------------------------------------------
+  data required time                                                 9.71
+  data arrival time                                                 -2.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.59
+
+
+  Startpoint: par_en (input port clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[1]
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: INPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  par_en (in)                                             0.01       2.01 r
+  uart_rx_inst/par_en (uart_rx)                           0.00       2.01 r
+  uart_rx_inst/uart_rx_controller_blk/par_en (uart_rx_controller)     0.00     2.01 r
+  uart_rx_inst/uart_rx_controller_blk/U48/Y (NAND4X0_RVT)     0.03     2.04 f
+  uart_rx_inst/uart_rx_controller_blk/U47/Y (NAND2X0_RVT)     0.05     2.09 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[1]/D (DFFSSRX1_RVT)     0.00     2.09 r
+  data arrival time                                                  2.09
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_controller_blk/state_reg[1]/CLK (DFFSSRX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.11       9.69
+  data required time                                                 9.69
+  --------------------------------------------------------------------------
+  data required time                                                 9.69
+  data arrival time                                                 -2.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.61
+
+
+  Startpoint: par_en (input port clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[0]
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: INPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  par_en (in)                                             0.01       2.01 r
+  uart_rx_inst/par_en (uart_rx)                           0.00       2.01 r
+  uart_rx_inst/uart_rx_controller_blk/par_en (uart_rx_controller)     0.00     2.01 r
+  uart_rx_inst/uart_rx_controller_blk/U48/Y (NAND4X0_RVT)     0.03     2.04 f
+  uart_rx_inst/uart_rx_controller_blk/U47/Y (NAND2X0_RVT)     0.05     2.09 r
+  uart_rx_inst/uart_rx_controller_blk/U14/Y (INVX1_RVT)     0.01     2.10 f
+  uart_rx_inst/uart_rx_controller_blk/U33/Y (NAND4X0_RVT)     0.03     2.13 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[0]/RSTB (DFFSSRX1_RVT)     0.00     2.13 r
+  data arrival time                                                  2.13
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_controller_blk/state_reg[0]/CLK (DFFSSRX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -2.13
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.61
+
+
+  Startpoint: rst_n (input port clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[0]
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: INPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx            8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  rst_n (in)                                              0.00       2.00 r
+  U8/Y (NBUFFX2_RVT)                                      0.03       2.04 r
+  uart_rx_inst/rst_n (uart_rx)                            0.00       2.04 r
+  uart_rx_inst/U3/Y (NBUFFX2_RVT)                         0.04       2.08 r
+  uart_rx_inst/uart_rx_controller_blk/rst_n (uart_rx_controller)     0.00     2.08 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[0]/D (DFFSSRX1_RVT)     0.00     2.08 r
+  data arrival time                                                  2.08
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_controller_blk/state_reg[0]/CLK (DFFSSRX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.10       9.70
+  data required time                                                 9.70
+  --------------------------------------------------------------------------
+  data required time                                                 9.70
+  data arrival time                                                 -2.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.62
+
+
+  Startpoint: rst_n (input port clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[2]
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: INPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx            8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  rst_n (in)                                              0.00       2.00 r
+  U8/Y (NBUFFX2_RVT)                                      0.03       2.04 r
+  uart_rx_inst/rst_n (uart_rx)                            0.00       2.04 r
+  uart_rx_inst/U3/Y (NBUFFX2_RVT)                         0.04       2.08 r
+  uart_rx_inst/uart_rx_controller_blk/rst_n (uart_rx_controller)     0.00     2.08 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/RSTB (DFFSSRX1_RVT)     0.00     2.08 r
+  data arrival time                                                  2.08
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/CLK (DFFSSRX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -2.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.65
+
+
+  Startpoint: rst_n (input port clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[1]
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: INPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx            8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  rst_n (in)                                              0.00       2.00 r
+  U8/Y (NBUFFX2_RVT)                                      0.03       2.04 r
+  uart_rx_inst/rst_n (uart_rx)                            0.00       2.04 r
+  uart_rx_inst/U3/Y (NBUFFX2_RVT)                         0.04       2.08 r
+  uart_rx_inst/uart_rx_controller_blk/rst_n (uart_rx_controller)     0.00     2.08 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[1]/RSTB (DFFSSRX1_RVT)     0.00     2.08 r
+  data arrival time                                                  2.08
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_controller_blk/state_reg[1]/CLK (DFFSSRX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.07       9.73
+  data required time                                                 9.73
+  --------------------------------------------------------------------------
+  data required time                                                 9.73
+  data arrival time                                                 -2.08
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.65
+
+
+  Startpoint: par_typ (input port clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_parity_check_blk/calc_par_bit_reg
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: INPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_parity_check ForQA               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  par_typ (in)                                            0.01       2.01 r
+  uart_rx_inst/par_typ (uart_rx)                          0.00       2.01 r
+  uart_rx_inst/uart_rx_parity_check_blk/par_typ (uart_rx_parity_check)     0.00     2.01 r
+  uart_rx_inst/uart_rx_parity_check_blk/U11/Y (AO22X1_RVT)     0.04     2.05 r
+  uart_rx_inst/uart_rx_parity_check_blk/U10/Y (AO22X1_RVT)     0.04     2.09 r
+  uart_rx_inst/uart_rx_parity_check_blk/calc_par_bit_reg/D (DFFARX1_RVT)     0.00     2.09 r
+  data arrival time                                                  2.09
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_parity_check_blk/calc_par_bit_reg/CLK (DFFARX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.03       9.77
+  data required time                                                 9.77
+  --------------------------------------------------------------------------
+  data required time                                                 9.77
+  data arrival time                                                 -2.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.68
+
+
+  Startpoint: rx_in (input port clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_data_sampling_blk/three_samps_data_reg[2]
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: INPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_data_sampling ForQA              saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  rx_in (in)                                              0.01       2.01 r
+  uart_rx_inst/rx_in (uart_rx)                            0.00       2.01 r
+  uart_rx_inst/uart_rx_data_sampling_blk/rx_in (uart_rx_data_sampling)     0.00     2.01 r
+  uart_rx_inst/uart_rx_data_sampling_blk/U17/Y (AO22X1_RVT)     0.04     2.05 r
+  uart_rx_inst/uart_rx_data_sampling_blk/three_samps_data_reg[2]/D (DFFARX1_RVT)     0.00     2.05 r
+  data arrival time                                                  2.05
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_data_sampling_blk/three_samps_data_reg[2]/CLK (DFFARX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.03       9.77
+  data required time                                                 9.77
+  --------------------------------------------------------------------------
+  data required time                                                 9.77
+  data arrival time                                                 -2.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.73
+
+
+  Startpoint: rx_in (input port clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_data_sampling_blk/three_samps_data_reg[1]
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: INPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_data_sampling ForQA              saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  rx_in (in)                                              0.01       2.01 r
+  uart_rx_inst/rx_in (uart_rx)                            0.00       2.01 r
+  uart_rx_inst/uart_rx_data_sampling_blk/rx_in (uart_rx_data_sampling)     0.00     2.01 r
+  uart_rx_inst/uart_rx_data_sampling_blk/U13/Y (AO22X1_RVT)     0.04     2.05 r
+  uart_rx_inst/uart_rx_data_sampling_blk/three_samps_data_reg[1]/D (DFFARX1_RVT)     0.00     2.05 r
+  data arrival time                                                  2.05
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_data_sampling_blk/three_samps_data_reg[1]/CLK (DFFARX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.03       9.77
+  data required time                                                 9.77
+  --------------------------------------------------------------------------
+  data required time                                                 9.77
+  data arrival time                                                 -2.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.73
+
+
+  Startpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[2]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: rx_p_data[1]
+            (output port clocked by sys_clk)
+  Path Group: OUTPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/CLK (DFFSSRX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/Q (DFFSSRX1_RVT)     0.10     0.10 f
+  uart_rx_inst/uart_rx_controller_blk/U46/Y (NAND2X0_RVT)     0.03     0.13 r
+  uart_rx_inst/uart_rx_controller_blk/U6/Y (INVX1_RVT)     0.02      0.15 f
+  uart_rx_inst/uart_rx_controller_blk/U4/Y (AND2X2_RVT)     0.06     0.21 f
+  uart_rx_inst/uart_rx_controller_blk/data_valid (uart_rx_controller)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/data_valid (uart_rx_deserializer)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/U24/Y (OA21X1_RVT)     0.04     0.26 f
+  uart_rx_inst/uart_rx_deserializer_blk/p_data[1] (uart_rx_deserializer)     0.00     0.26 f
+  uart_rx_inst/p_data[1] (uart_rx)                        0.00       0.26 f
+  rx_p_data[1] (out)                                      0.00       0.26 f
+  data arrival time                                                  0.26
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -2.00       7.80
+  data required time                                                 7.80
+  --------------------------------------------------------------------------
+  data required time                                                 7.80
+  data arrival time                                                 -0.26
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.54
+
+
+  Startpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[2]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: rx_p_data[9]
+            (output port clocked by sys_clk)
+  Path Group: OUTPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/CLK (DFFSSRX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/Q (DFFSSRX1_RVT)     0.10     0.10 f
+  uart_rx_inst/uart_rx_controller_blk/U46/Y (NAND2X0_RVT)     0.03     0.13 r
+  uart_rx_inst/uart_rx_controller_blk/U6/Y (INVX1_RVT)     0.02      0.15 f
+  uart_rx_inst/uart_rx_controller_blk/U4/Y (AND2X2_RVT)     0.06     0.21 f
+  uart_rx_inst/uart_rx_controller_blk/data_valid (uart_rx_controller)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/data_valid (uart_rx_deserializer)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/U16/Y (AND2X1_RVT)     0.04     0.25 f
+  uart_rx_inst/uart_rx_deserializer_blk/p_data[9] (uart_rx_deserializer)     0.00     0.25 f
+  uart_rx_inst/p_data[9] (uart_rx)                        0.00       0.25 f
+  rx_p_data[9] (out)                                      0.00       0.25 f
+  data arrival time                                                  0.25
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -2.00       7.80
+  data required time                                                 7.80
+  --------------------------------------------------------------------------
+  data required time                                                 7.80
+  data arrival time                                                 -0.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.55
+
+
+  Startpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[2]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: rx_p_data[8]
+            (output port clocked by sys_clk)
+  Path Group: OUTPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/CLK (DFFSSRX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/Q (DFFSSRX1_RVT)     0.10     0.10 f
+  uart_rx_inst/uart_rx_controller_blk/U46/Y (NAND2X0_RVT)     0.03     0.13 r
+  uart_rx_inst/uart_rx_controller_blk/U6/Y (INVX1_RVT)     0.02      0.15 f
+  uart_rx_inst/uart_rx_controller_blk/U4/Y (AND2X2_RVT)     0.06     0.21 f
+  uart_rx_inst/uart_rx_controller_blk/data_valid (uart_rx_controller)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/data_valid (uart_rx_deserializer)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/U17/Y (AND2X1_RVT)     0.04     0.25 f
+  uart_rx_inst/uart_rx_deserializer_blk/p_data[8] (uart_rx_deserializer)     0.00     0.25 f
+  uart_rx_inst/p_data[8] (uart_rx)                        0.00       0.25 f
+  rx_p_data[8] (out)                                      0.00       0.25 f
+  data arrival time                                                  0.25
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -2.00       7.80
+  data required time                                                 7.80
+  --------------------------------------------------------------------------
+  data required time                                                 7.80
+  data arrival time                                                 -0.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.55
+
+
+  Startpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[2]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: rx_p_data[7]
+            (output port clocked by sys_clk)
+  Path Group: OUTPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/CLK (DFFSSRX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/Q (DFFSSRX1_RVT)     0.10     0.10 f
+  uart_rx_inst/uart_rx_controller_blk/U46/Y (NAND2X0_RVT)     0.03     0.13 r
+  uart_rx_inst/uart_rx_controller_blk/U6/Y (INVX1_RVT)     0.02      0.15 f
+  uart_rx_inst/uart_rx_controller_blk/U4/Y (AND2X2_RVT)     0.06     0.21 f
+  uart_rx_inst/uart_rx_controller_blk/data_valid (uart_rx_controller)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/data_valid (uart_rx_deserializer)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/U18/Y (AND2X1_RVT)     0.04     0.25 f
+  uart_rx_inst/uart_rx_deserializer_blk/p_data[7] (uart_rx_deserializer)     0.00     0.25 f
+  uart_rx_inst/p_data[7] (uart_rx)                        0.00       0.25 f
+  rx_p_data[7] (out)                                      0.00       0.25 f
+  data arrival time                                                  0.25
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -2.00       7.80
+  data required time                                                 7.80
+  --------------------------------------------------------------------------
+  data required time                                                 7.80
+  data arrival time                                                 -0.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.55
+
+
+  Startpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[2]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: rx_p_data[6]
+            (output port clocked by sys_clk)
+  Path Group: OUTPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/CLK (DFFSSRX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/Q (DFFSSRX1_RVT)     0.10     0.10 f
+  uart_rx_inst/uart_rx_controller_blk/U46/Y (NAND2X0_RVT)     0.03     0.13 r
+  uart_rx_inst/uart_rx_controller_blk/U6/Y (INVX1_RVT)     0.02      0.15 f
+  uart_rx_inst/uart_rx_controller_blk/U4/Y (AND2X2_RVT)     0.06     0.21 f
+  uart_rx_inst/uart_rx_controller_blk/data_valid (uart_rx_controller)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/data_valid (uart_rx_deserializer)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/U19/Y (AND2X1_RVT)     0.04     0.25 f
+  uart_rx_inst/uart_rx_deserializer_blk/p_data[6] (uart_rx_deserializer)     0.00     0.25 f
+  uart_rx_inst/p_data[6] (uart_rx)                        0.00       0.25 f
+  rx_p_data[6] (out)                                      0.00       0.25 f
+  data arrival time                                                  0.25
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -2.00       7.80
+  data required time                                                 7.80
+  --------------------------------------------------------------------------
+  data required time                                                 7.80
+  data arrival time                                                 -0.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.55
+
+
+  Startpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[2]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: rx_p_data[5]
+            (output port clocked by sys_clk)
+  Path Group: OUTPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/CLK (DFFSSRX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/Q (DFFSSRX1_RVT)     0.10     0.10 f
+  uart_rx_inst/uart_rx_controller_blk/U46/Y (NAND2X0_RVT)     0.03     0.13 r
+  uart_rx_inst/uart_rx_controller_blk/U6/Y (INVX1_RVT)     0.02      0.15 f
+  uart_rx_inst/uart_rx_controller_blk/U4/Y (AND2X2_RVT)     0.06     0.21 f
+  uart_rx_inst/uart_rx_controller_blk/data_valid (uart_rx_controller)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/data_valid (uart_rx_deserializer)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/U20/Y (AND2X1_RVT)     0.04     0.25 f
+  uart_rx_inst/uart_rx_deserializer_blk/p_data[5] (uart_rx_deserializer)     0.00     0.25 f
+  uart_rx_inst/p_data[5] (uart_rx)                        0.00       0.25 f
+  rx_p_data[5] (out)                                      0.00       0.25 f
+  data arrival time                                                  0.25
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -2.00       7.80
+  data required time                                                 7.80
+  --------------------------------------------------------------------------
+  data required time                                                 7.80
+  data arrival time                                                 -0.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.55
+
+
+  Startpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[2]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: rx_p_data[4]
+            (output port clocked by sys_clk)
+  Path Group: OUTPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/CLK (DFFSSRX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/Q (DFFSSRX1_RVT)     0.10     0.10 f
+  uart_rx_inst/uart_rx_controller_blk/U46/Y (NAND2X0_RVT)     0.03     0.13 r
+  uart_rx_inst/uart_rx_controller_blk/U6/Y (INVX1_RVT)     0.02      0.15 f
+  uart_rx_inst/uart_rx_controller_blk/U4/Y (AND2X2_RVT)     0.06     0.21 f
+  uart_rx_inst/uart_rx_controller_blk/data_valid (uart_rx_controller)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/data_valid (uart_rx_deserializer)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/U21/Y (AND2X1_RVT)     0.04     0.25 f
+  uart_rx_inst/uart_rx_deserializer_blk/p_data[4] (uart_rx_deserializer)     0.00     0.25 f
+  uart_rx_inst/p_data[4] (uart_rx)                        0.00       0.25 f
+  rx_p_data[4] (out)                                      0.00       0.25 f
+  data arrival time                                                  0.25
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -2.00       7.80
+  data required time                                                 7.80
+  --------------------------------------------------------------------------
+  data required time                                                 7.80
+  data arrival time                                                 -0.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.55
+
+
+  Startpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[2]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: rx_p_data[3]
+            (output port clocked by sys_clk)
+  Path Group: OUTPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/CLK (DFFSSRX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/Q (DFFSSRX1_RVT)     0.10     0.10 f
+  uart_rx_inst/uart_rx_controller_blk/U46/Y (NAND2X0_RVT)     0.03     0.13 r
+  uart_rx_inst/uart_rx_controller_blk/U6/Y (INVX1_RVT)     0.02      0.15 f
+  uart_rx_inst/uart_rx_controller_blk/U4/Y (AND2X2_RVT)     0.06     0.21 f
+  uart_rx_inst/uart_rx_controller_blk/data_valid (uart_rx_controller)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/data_valid (uart_rx_deserializer)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/U22/Y (AND2X1_RVT)     0.04     0.25 f
+  uart_rx_inst/uart_rx_deserializer_blk/p_data[3] (uart_rx_deserializer)     0.00     0.25 f
+  uart_rx_inst/p_data[3] (uart_rx)                        0.00       0.25 f
+  rx_p_data[3] (out)                                      0.00       0.25 f
+  data arrival time                                                  0.25
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -2.00       7.80
+  data required time                                                 7.80
+  --------------------------------------------------------------------------
+  data required time                                                 7.80
+  data arrival time                                                 -0.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.55
+
+
+  Startpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[2]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: rx_p_data[2]
+            (output port clocked by sys_clk)
+  Path Group: OUTPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/CLK (DFFSSRX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/Q (DFFSSRX1_RVT)     0.10     0.10 f
+  uart_rx_inst/uart_rx_controller_blk/U46/Y (NAND2X0_RVT)     0.03     0.13 r
+  uart_rx_inst/uart_rx_controller_blk/U6/Y (INVX1_RVT)     0.02      0.15 f
+  uart_rx_inst/uart_rx_controller_blk/U4/Y (AND2X2_RVT)     0.06     0.21 f
+  uart_rx_inst/uart_rx_controller_blk/data_valid (uart_rx_controller)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/data_valid (uart_rx_deserializer)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/U23/Y (AND2X1_RVT)     0.04     0.25 f
+  uart_rx_inst/uart_rx_deserializer_blk/p_data[2] (uart_rx_deserializer)     0.00     0.25 f
+  uart_rx_inst/p_data[2] (uart_rx)                        0.00       0.25 f
+  rx_p_data[2] (out)                                      0.00       0.25 f
+  data arrival time                                                  0.25
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -2.00       7.80
+  data required time                                                 7.80
+  --------------------------------------------------------------------------
+  data required time                                                 7.80
+  data arrival time                                                 -0.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.55
+
+
+  Startpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[2]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: rx_p_data[0]
+            (output port clocked by sys_clk)
+  Path Group: OUTPUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_deserializer ForQA               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/CLK (DFFSSRX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/Q (DFFSSRX1_RVT)     0.10     0.10 f
+  uart_rx_inst/uart_rx_controller_blk/U46/Y (NAND2X0_RVT)     0.03     0.13 r
+  uart_rx_inst/uart_rx_controller_blk/U6/Y (INVX1_RVT)     0.02      0.15 f
+  uart_rx_inst/uart_rx_controller_blk/U4/Y (AND2X2_RVT)     0.06     0.21 f
+  uart_rx_inst/uart_rx_controller_blk/data_valid (uart_rx_controller)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/data_valid (uart_rx_deserializer)     0.00     0.21 f
+  uart_rx_inst/uart_rx_deserializer_blk/U5/Y (INVX1_RVT)     0.02     0.24 r
+  uart_rx_inst/uart_rx_deserializer_blk/U52/Y (INVX1_RVT)     0.01     0.24 f
+  uart_rx_inst/uart_rx_deserializer_blk/p_data[0] (uart_rx_deserializer)     0.00     0.24 f
+  uart_rx_inst/p_data[0] (uart_rx)                        0.00       0.24 f
+  rx_p_data[0] (out)                                      0.00       0.24 f
+  data arrival time                                                  0.24
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -2.00       7.80
+  data required time                                                 7.80
+  --------------------------------------------------------------------------
+  data required time                                                 7.80
+  data arrival time                                                 -0.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.56
+
+
+  Startpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[2]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[3]
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: sys_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+  uart_rx            8000                  saed32rvt_tt1p05v25c
+  uart_rx_counters   ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/CLK (DFFSSRX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/Q (DFFSSRX1_RVT)     0.10     0.10 f
+  uart_rx_inst/uart_rx_controller_blk/U46/Y (NAND2X0_RVT)     0.03     0.13 r
+  uart_rx_inst/uart_rx_controller_blk/U6/Y (INVX1_RVT)     0.02      0.15 f
+  uart_rx_inst/uart_rx_controller_blk/U43/Y (NAND2X0_RVT)     0.04     0.20 r
+  uart_rx_inst/uart_rx_controller_blk/U24/Y (NAND3X0_RVT)     0.08     0.28 f
+  uart_rx_inst/uart_rx_controller_blk/counter_en (uart_rx_controller)     0.00     0.28 f
+  uart_rx_inst/uart_rx_counters_blk/enable (uart_rx_counters)     0.00     0.28 f
+  uart_rx_inst/uart_rx_counters_blk/U25/Y (NAND4X0_RVT)     0.07     0.35 r
+  uart_rx_inst/uart_rx_counters_blk/U3/Y (INVX1_RVT)      0.04       0.39 f
+  uart_rx_inst/uart_rx_counters_blk/U20/Y (AO22X1_RVT)     0.04      0.43 f
+  uart_rx_inst/uart_rx_counters_blk/U16/Y (AO21X1_RVT)     0.03      0.46 f
+  uart_rx_inst/uart_rx_counters_blk/U12/Y (AOI21X1_RVT)     0.04     0.50 r
+  uart_rx_inst/uart_rx_counters_blk/U11/Y (OAI22X1_RVT)     0.05     0.55 f
+  uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[3]/D (DFFARX1_RVT)     0.00     0.55 f
+  data arrival time                                                  0.55
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[3]/CLK (DFFARX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.02       9.78
+  data required time                                                 9.78
+  --------------------------------------------------------------------------
+  data required time                                                 9.78
+  data arrival time                                                 -0.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.23
+
+
+  Startpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[1]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[0]
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: sys_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+  uart_rx            8000                  saed32rvt_tt1p05v25c
+  uart_rx_parity_check ForQA               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_controller_blk/state_reg[1]/CLK (DFFSSRX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[1]/Q (DFFSSRX1_RVT)     0.10     0.10 f
+  uart_rx_inst/uart_rx_controller_blk/U52/Y (NAND2X0_RVT)     0.04     0.14 r
+  uart_rx_inst/uart_rx_controller_blk/U10/Y (INVX1_RVT)     0.02     0.16 f
+  uart_rx_inst/uart_rx_controller_blk/U51/Y (AND2X1_RVT)     0.04     0.20 f
+  uart_rx_inst/uart_rx_controller_blk/par_chk_en (uart_rx_controller)     0.00     0.20 f
+  uart_rx_inst/uart_rx_parity_check_blk/par_chk_en (uart_rx_parity_check)     0.00     0.20 f
+  uart_rx_inst/uart_rx_parity_check_blk/U9/Y (AND2X1_RVT)     0.03     0.23 f
+  uart_rx_inst/uart_rx_parity_check_blk/U8/Y (AND4X1_RVT)     0.05     0.28 f
+  uart_rx_inst/uart_rx_parity_check_blk/par_err (uart_rx_parity_check)     0.00     0.28 f
+  uart_rx_inst/uart_rx_controller_blk/par_err (uart_rx_controller)     0.00     0.28 f
+  uart_rx_inst/uart_rx_controller_blk/U21/Y (INVX1_RVT)     0.02     0.30 r
+  uart_rx_inst/uart_rx_controller_blk/U53/Y (NAND4X0_RVT)     0.05     0.35 f
+  uart_rx_inst/uart_rx_controller_blk/U50/Y (NAND3X0_RVT)     0.03     0.39 r
+  uart_rx_inst/uart_rx_controller_blk/U47/Y (NAND2X0_RVT)     0.03     0.42 f
+  uart_rx_inst/uart_rx_controller_blk/U14/Y (INVX1_RVT)     0.02     0.44 r
+  uart_rx_inst/uart_rx_controller_blk/U33/Y (NAND4X0_RVT)     0.03     0.47 f
+  uart_rx_inst/uart_rx_controller_blk/state_reg[0]/RSTB (DFFSSRX1_RVT)     0.00     0.47 f
+  data arrival time                                                  0.47
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_controller_blk/state_reg[0]/CLK (DFFSSRX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.05       9.75
+  data required time                                                 9.75
+  --------------------------------------------------------------------------
+  data required time                                                 9.75
+  data arrival time                                                 -0.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.27
+
+
+  Startpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[2]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[2]
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: sys_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+  uart_rx            8000                  saed32rvt_tt1p05v25c
+  uart_rx_counters   ForQA                 saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/CLK (DFFSSRX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/Q (DFFSSRX1_RVT)     0.10     0.10 f
+  uart_rx_inst/uart_rx_controller_blk/U46/Y (NAND2X0_RVT)     0.03     0.13 r
+  uart_rx_inst/uart_rx_controller_blk/U6/Y (INVX1_RVT)     0.02      0.15 f
+  uart_rx_inst/uart_rx_controller_blk/U43/Y (NAND2X0_RVT)     0.04     0.20 r
+  uart_rx_inst/uart_rx_controller_blk/U24/Y (NAND3X0_RVT)     0.08     0.28 f
+  uart_rx_inst/uart_rx_controller_blk/counter_en (uart_rx_controller)     0.00     0.28 f
+  uart_rx_inst/uart_rx_counters_blk/enable (uart_rx_counters)     0.00     0.28 f
+  uart_rx_inst/uart_rx_counters_blk/U25/Y (NAND4X0_RVT)     0.07     0.35 r
+  uart_rx_inst/uart_rx_counters_blk/U3/Y (INVX1_RVT)      0.04       0.39 f
+  uart_rx_inst/uart_rx_counters_blk/U20/Y (AO22X1_RVT)     0.04      0.43 f
+  uart_rx_inst/uart_rx_counters_blk/U16/Y (AO21X1_RVT)     0.03      0.46 f
+  uart_rx_inst/uart_rx_counters_blk/U13/Y (AO22X1_RVT)     0.04      0.50 f
+  uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[2]/D (DFFARX1_RVT)     0.00     0.50 f
+  data arrival time                                                  0.50
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[2]/CLK (DFFARX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.02       9.78
+  data required time                                                 9.78
+  --------------------------------------------------------------------------
+  data required time                                                 9.78
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.28
+
+
+  Startpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[1]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[2]
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: sys_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+  uart_rx            8000                  saed32rvt_tt1p05v25c
+  uart_rx_parity_check ForQA               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_controller_blk/state_reg[1]/CLK (DFFSSRX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[1]/Q (DFFSSRX1_RVT)     0.10     0.10 f
+  uart_rx_inst/uart_rx_controller_blk/U52/Y (NAND2X0_RVT)     0.04     0.14 r
+  uart_rx_inst/uart_rx_controller_blk/U10/Y (INVX1_RVT)     0.02     0.16 f
+  uart_rx_inst/uart_rx_controller_blk/U51/Y (AND2X1_RVT)     0.04     0.20 f
+  uart_rx_inst/uart_rx_controller_blk/par_chk_en (uart_rx_controller)     0.00     0.20 f
+  uart_rx_inst/uart_rx_parity_check_blk/par_chk_en (uart_rx_parity_check)     0.00     0.20 f
+  uart_rx_inst/uart_rx_parity_check_blk/U9/Y (AND2X1_RVT)     0.03     0.23 f
+  uart_rx_inst/uart_rx_parity_check_blk/U8/Y (AND4X1_RVT)     0.05     0.28 f
+  uart_rx_inst/uart_rx_parity_check_blk/par_err (uart_rx_parity_check)     0.00     0.28 f
+  uart_rx_inst/uart_rx_controller_blk/par_err (uart_rx_controller)     0.00     0.28 f
+  uart_rx_inst/uart_rx_controller_blk/U21/Y (INVX1_RVT)     0.02     0.30 r
+  uart_rx_inst/uart_rx_controller_blk/U53/Y (NAND4X0_RVT)     0.05     0.35 f
+  uart_rx_inst/uart_rx_controller_blk/U8/Y (INVX1_RVT)     0.02      0.38 r
+  uart_rx_inst/uart_rx_controller_blk/U28/Y (AO22X1_RVT)     0.04     0.42 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/D (DFFSSRX1_RVT)     0.00     0.42 r
+  data arrival time                                                  0.42
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/CLK (DFFSSRX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.09       9.71
+  data required time                                                 9.71
+  --------------------------------------------------------------------------
+  data required time                                                 9.71
+  data arrival time                                                 -0.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.29
+
+
+  Startpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[1]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[1]
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: sys_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+  uart_rx            8000                  saed32rvt_tt1p05v25c
+  uart_rx_parity_check ForQA               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_controller_blk/state_reg[1]/CLK (DFFSSRX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[1]/Q (DFFSSRX1_RVT)     0.09     0.09 r
+  uart_rx_inst/uart_rx_controller_blk/U52/Y (NAND2X0_RVT)     0.04     0.13 f
+  uart_rx_inst/uart_rx_controller_blk/U10/Y (INVX1_RVT)     0.03     0.16 r
+  uart_rx_inst/uart_rx_controller_blk/U51/Y (AND2X1_RVT)     0.03     0.19 r
+  uart_rx_inst/uart_rx_controller_blk/par_chk_en (uart_rx_controller)     0.00     0.19 r
+  uart_rx_inst/uart_rx_parity_check_blk/par_chk_en (uart_rx_parity_check)     0.00     0.19 r
+  uart_rx_inst/uart_rx_parity_check_blk/U9/Y (AND2X1_RVT)     0.03     0.22 r
+  uart_rx_inst/uart_rx_parity_check_blk/U8/Y (AND4X1_RVT)     0.05     0.27 r
+  uart_rx_inst/uart_rx_parity_check_blk/par_err (uart_rx_parity_check)     0.00     0.27 r
+  uart_rx_inst/uart_rx_controller_blk/par_err (uart_rx_controller)     0.00     0.27 r
+  uart_rx_inst/uart_rx_controller_blk/U21/Y (INVX1_RVT)     0.02     0.29 f
+  uart_rx_inst/uart_rx_controller_blk/U53/Y (NAND4X0_RVT)     0.04     0.32 r
+  uart_rx_inst/uart_rx_controller_blk/U50/Y (NAND3X0_RVT)     0.03     0.35 f
+  uart_rx_inst/uart_rx_controller_blk/U47/Y (NAND2X0_RVT)     0.04     0.40 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[1]/D (DFFSSRX1_RVT)     0.00     0.40 r
+  data arrival time                                                  0.40
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_controller_blk/state_reg[1]/CLK (DFFSSRX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.11       9.69
+  data required time                                                 9.69
+  --------------------------------------------------------------------------
+  data required time                                                 9.69
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.29
+
+
+  Startpoint: uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[1]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[2]
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: sys_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx            8000                  saed32rvt_tt1p05v25c
+  uart_rx_deserializer ForQA               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[1]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[1]/Q (DFFARX1_RVT)     0.12     0.12 r
+  uart_rx_inst/uart_rx_counters_blk/bit_cnt[1] (uart_rx_counters)     0.00     0.12 r
+  uart_rx_inst/uart_rx_deserializer_blk/bit_cnt[1] (uart_rx_deserializer)     0.00     0.12 r
+  uart_rx_inst/uart_rx_deserializer_blk/U10/Y (INVX1_RVT)     0.03     0.15 f
+  uart_rx_inst/uart_rx_deserializer_blk/U46/Y (AND3X1_RVT)     0.05     0.20 f
+  uart_rx_inst/uart_rx_deserializer_blk/U45/Y (NOR3X0_RVT)     0.06     0.26 r
+  uart_rx_inst/uart_rx_deserializer_blk/U44/Y (AND4X1_RVT)     0.06     0.32 r
+  uart_rx_inst/uart_rx_deserializer_blk/U33/Y (AND2X1_RVT)     0.04     0.36 r
+  uart_rx_inst/uart_rx_deserializer_blk/U26/Y (NAND3X0_RVT)     0.04     0.41 f
+  uart_rx_inst/uart_rx_deserializer_blk/U12/Y (INVX1_RVT)     0.02     0.43 r
+  uart_rx_inst/uart_rx_deserializer_blk/U25/Y (AO22X1_RVT)     0.05     0.47 r
+  uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[2]/D (DFFARX1_RVT)     0.00     0.47 r
+  data arrival time                                                  0.47
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[2]/CLK (DFFARX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.03       9.77
+  data required time                                                 9.77
+  --------------------------------------------------------------------------
+  data required time                                                 9.77
+  data arrival time                                                 -0.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.30
+
+
+  Startpoint: uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[1]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[5]
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: sys_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx            8000                  saed32rvt_tt1p05v25c
+  uart_rx_deserializer ForQA               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[1]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[1]/Q (DFFARX1_RVT)     0.12     0.12 r
+  uart_rx_inst/uart_rx_counters_blk/bit_cnt[1] (uart_rx_counters)     0.00     0.12 r
+  uart_rx_inst/uart_rx_deserializer_blk/bit_cnt[1] (uart_rx_deserializer)     0.00     0.12 r
+  uart_rx_inst/uart_rx_deserializer_blk/U10/Y (INVX1_RVT)     0.03     0.15 f
+  uart_rx_inst/uart_rx_deserializer_blk/U46/Y (AND3X1_RVT)     0.05     0.20 f
+  uart_rx_inst/uart_rx_deserializer_blk/U45/Y (NOR3X0_RVT)     0.06     0.26 r
+  uart_rx_inst/uart_rx_deserializer_blk/U44/Y (AND4X1_RVT)     0.06     0.32 r
+  uart_rx_inst/uart_rx_deserializer_blk/U33/Y (AND2X1_RVT)     0.04     0.36 r
+  uart_rx_inst/uart_rx_deserializer_blk/U32/Y (NAND3X0_RVT)     0.04     0.41 f
+  uart_rx_inst/uart_rx_deserializer_blk/U8/Y (INVX1_RVT)     0.02     0.43 r
+  uart_rx_inst/uart_rx_deserializer_blk/U31/Y (AO22X1_RVT)     0.05     0.47 r
+  uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[5]/D (DFFARX1_RVT)     0.00     0.47 r
+  data arrival time                                                  0.47
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[5]/CLK (DFFARX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.03       9.77
+  data required time                                                 9.77
+  --------------------------------------------------------------------------
+  data required time                                                 9.77
+  data arrival time                                                 -0.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.30
+
+
+  Startpoint: uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[1]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[3]
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: sys_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx            8000                  saed32rvt_tt1p05v25c
+  uart_rx_deserializer ForQA               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[1]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[1]/Q (DFFARX1_RVT)     0.12     0.12 r
+  uart_rx_inst/uart_rx_counters_blk/bit_cnt[1] (uart_rx_counters)     0.00     0.12 r
+  uart_rx_inst/uart_rx_deserializer_blk/bit_cnt[1] (uart_rx_deserializer)     0.00     0.12 r
+  uart_rx_inst/uart_rx_deserializer_blk/U10/Y (INVX1_RVT)     0.03     0.15 f
+  uart_rx_inst/uart_rx_deserializer_blk/U46/Y (AND3X1_RVT)     0.05     0.20 f
+  uart_rx_inst/uart_rx_deserializer_blk/U45/Y (NOR3X0_RVT)     0.06     0.26 r
+  uart_rx_inst/uart_rx_deserializer_blk/U44/Y (AND4X1_RVT)     0.06     0.32 r
+  uart_rx_inst/uart_rx_deserializer_blk/U33/Y (AND2X1_RVT)     0.04     0.36 r
+  uart_rx_inst/uart_rx_deserializer_blk/U28/Y (NAND3X0_RVT)     0.04     0.40 f
+  uart_rx_inst/uart_rx_deserializer_blk/U48/Y (INVX1_RVT)     0.02     0.42 r
+  uart_rx_inst/uart_rx_deserializer_blk/U27/Y (AO22X1_RVT)     0.05     0.47 r
+  uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[3]/D (DFFARX1_RVT)     0.00     0.47 r
+  data arrival time                                                  0.47
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[3]/CLK (DFFARX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.03       9.77
+  data required time                                                 9.77
+  --------------------------------------------------------------------------
+  data required time                                                 9.77
+  data arrival time                                                 -0.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.30
+
+
+  Startpoint: uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[1]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[4]
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: sys_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx            8000                  saed32rvt_tt1p05v25c
+  uart_rx_deserializer ForQA               saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[1]/CLK (DFFARX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[1]/Q (DFFARX1_RVT)     0.12     0.12 r
+  uart_rx_inst/uart_rx_counters_blk/bit_cnt[1] (uart_rx_counters)     0.00     0.12 r
+  uart_rx_inst/uart_rx_deserializer_blk/bit_cnt[1] (uart_rx_deserializer)     0.00     0.12 r
+  uart_rx_inst/uart_rx_deserializer_blk/U10/Y (INVX1_RVT)     0.03     0.15 f
+  uart_rx_inst/uart_rx_deserializer_blk/U46/Y (AND3X1_RVT)     0.05     0.20 f
+  uart_rx_inst/uart_rx_deserializer_blk/U45/Y (NOR3X0_RVT)     0.06     0.26 r
+  uart_rx_inst/uart_rx_deserializer_blk/U44/Y (AND4X1_RVT)     0.06     0.32 r
+  uart_rx_inst/uart_rx_deserializer_blk/U33/Y (AND2X1_RVT)     0.04     0.36 r
+  uart_rx_inst/uart_rx_deserializer_blk/U30/Y (NAND3X0_RVT)     0.04     0.40 f
+  uart_rx_inst/uart_rx_deserializer_blk/U49/Y (INVX1_RVT)     0.02     0.42 r
+  uart_rx_inst/uart_rx_deserializer_blk/U29/Y (AO22X1_RVT)     0.05     0.47 r
+  uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[4]/D (DFFARX1_RVT)     0.00     0.47 r
+  data arrival time                                                  0.47
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[4]/CLK (DFFARX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.03       9.77
+  data required time                                                 9.77
+  --------------------------------------------------------------------------
+  data required time                                                 9.77
+  data arrival time                                                 -0.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.30
+
+
+  Startpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[2]
+              (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[2]
+            (rising edge-triggered flip-flop clocked by sys_clk)
+  Path Group: sys_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart               ForQA                 saed32rvt_tt1p05v25c
+  uart_rx_controller ForQA                 saed32rvt_tt1p05v25c
+  uart_rx            8000                  saed32rvt_tt1p05v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sys_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/CLK (DFFSSRX1_RVT)     0.00     0.00 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/Q (DFFSSRX1_RVT)     0.09     0.09 r
+  uart_rx_inst/uart_rx_controller_blk/U46/Y (NAND2X0_RVT)     0.03     0.12 f
+  uart_rx_inst/uart_rx_controller_blk/U6/Y (INVX1_RVT)     0.02      0.14 r
+  uart_rx_inst/uart_rx_controller_blk/U43/Y (NAND2X0_RVT)     0.04     0.18 f
+  uart_rx_inst/uart_rx_controller_blk/U18/Y (INVX1_RVT)     0.02     0.21 r
+  uart_rx_inst/uart_rx_controller_blk/U42/Y (NAND2X0_RVT)     0.02     0.23 f
+  uart_rx_inst/uart_rx_controller_blk/U7/Y (NOR4X1_RVT)     0.07     0.30 r
+  uart_rx_inst/uart_rx_controller_blk/U39/Y (AOI21X1_RVT)     0.04     0.34 f
+  uart_rx_inst/uart_rx_controller_blk/U22/Y (OA21X1_RVT)     0.03     0.38 f
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/SETB (DFFSSRX1_RVT)     0.00     0.38 f
+  data arrival time                                                  0.38
+
+  clock sys_clk (rise edge)                              10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/CLK (DFFSSRX1_RVT)     0.00     9.80 r
+  library setup time                                     -0.11       9.69
+  data required time                                                 9.69
+  --------------------------------------------------------------------------
+  data required time                                                 9.69
+  data arrival time                                                 -0.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.31
+
+
+1

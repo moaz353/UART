@@ -1,0 +1,64 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : uart
+Version: O-2018.06-SP1
+Date   : Mon Aug 31 21:08:07 2026
+****************************************
+
+  Startpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[0] (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_controller_blk/state_reg[2] (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: sys_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock sys_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+
+  uart_rx_inst/uart_rx_controller_blk/state_reg[0]/CLK (DFFSSRX1_RVT)
+                                                                     0.05      0.00      0.00 r
+  uart_rx_inst/uart_rx_controller_blk/state_reg[0]/QN (DFFSSRX1_RVT)
+                                                                     0.02      0.04      0.04 r
+  uart_rx_inst/uart_rx_controller_blk/n12 (net)     1      0.70
+  uart_rx_inst/uart_rx_controller_blk/clockropt_h_inst_332/A (NBUFFX2_RVT)
+                                                                     0.02      0.00      0.04 r
+  uart_rx_inst/uart_rx_controller_blk/clockropt_h_inst_332/Y (NBUFFX2_RVT)
+                                                                     0.01      0.02      0.06 r
+  uart_rx_inst/uart_rx_controller_blk/ropt_net_35 (net)
+                                                    3      2.79
+  uart_rx_inst/uart_rx_controller_blk/U43/A2 (NAND2X0_RVT)           0.01      0.00      0.06 r
+  uart_rx_inst/uart_rx_controller_blk/U43/Y (NAND2X0_RVT)            0.05      0.03      0.09 f
+  uart_rx_inst/uart_rx_controller_blk/n22 (net)     3      4.25
+  uart_rx_inst/uart_rx_controller_blk/U22/A1 (OA21X1_RVT)            0.05      0.00      0.09 f
+  uart_rx_inst/uart_rx_controller_blk/U22/Y (OA21X1_RVT)             0.01      0.03      0.12 f
+  uart_rx_inst/uart_rx_controller_blk/n2 (net)      1      0.81
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/SETB (DFFSSRX1_RVT)
+                                                                     0.01      0.00      0.12 f
+  data arrival time                                                                      0.12
+
+  clock sys_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  uart_rx_inst/uart_rx_controller_blk/state_reg[2]/CLK (DFFSSRX1_RVT)
+                                                                     0.05      0.00      0.00 r
+  clock uncertainty                                                            0.10      0.10
+  library hold time                                                            0.02      0.12
+  data required time                                                                     0.12
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.12
+  data arrival time                                                                     -0.12
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+1

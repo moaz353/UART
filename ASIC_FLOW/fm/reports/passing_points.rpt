@@ -1,0 +1,198 @@
+**************************************************
+Report         : passing_points
+
+Reference      : Ref:/WORK/uart
+Implementation : Imp:/WORK/uart
+Version        : L-2016.03-SP1
+Date           : Sun Aug 30 16:59:20 2026
+**************************************************
+
+54 Passing compare points:
+
+  Ref  DFF        Ref:/WORK/uart/baud_cnt_reg_0_
+  Impl DFF        Imp:/WORK/uart/baud_cnt_reg_0_
+
+  Ref  DFF        Ref:/WORK/uart/baud_cnt_reg_1_
+  Impl DFF        Imp:/WORK/uart/baud_cnt_reg_1_
+
+  Ref  DFF        Ref:/WORK/uart/baud_cnt_reg_2_
+  Impl DFF        Imp:/WORK/uart/baud_cnt_reg_2_
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_controller_blk/state_reg[0]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_controller_blk/state_reg[0]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_controller_blk/state_reg[1]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_controller_blk/state_reg[1]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_controller_blk/state_reg[2]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_controller_blk/state_reg[2]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[0]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[0]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[1]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[1]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[2]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[2]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[3]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/bit_cnt_reg[3]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/data_valid_cnt_reg[0]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/data_valid_cnt_reg[0]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/data_valid_cnt_reg[1]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/data_valid_cnt_reg[1]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/data_valid_cnt_reg[2]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/data_valid_cnt_reg[2]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/edge_cnt_reg[0]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/edge_cnt_reg[0]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/edge_cnt_reg[1]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/edge_cnt_reg[1]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/edge_cnt_reg[2]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_counters_blk/edge_cnt_reg[2]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_data_sampling_blk/sampled_bit_reg
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_data_sampling_blk/sampled_bit_reg
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_data_sampling_blk/three_samps_data_reg[0]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_data_sampling_blk/three_samps_data_reg[0]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_data_sampling_blk/three_samps_data_reg[1]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_data_sampling_blk/three_samps_data_reg[1]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_data_sampling_blk/three_samps_data_reg[2]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_data_sampling_blk/three_samps_data_reg[2]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[0]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[0]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[1]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[1]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[2]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[2]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[3]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[3]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[4]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[4]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[5]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[5]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[6]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[6]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[7]
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_deserializer_blk/p_data_temp_reg[7]
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_parity_check_blk/calc_par_bit_reg
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_parity_check_blk/calc_par_bit_reg
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_start_check_blk/str_glitch_reg
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_start_check_blk/str_glitch_reg
+
+  Ref  DFF        Ref:/WORK/uart/uart_rx_inst/uart_rx_stop_check_blk/stp_err_reg
+  Impl DFF        Imp:/WORK/uart/uart_rx_inst/uart_rx_stop_check_blk/stp_err_reg
+
+  Ref  DFF        Ref:/WORK/uart/uart_tx_inst/uart_tx_controller_mod/state_reg[0]
+  Impl DFF        Imp:/WORK/uart/uart_tx_inst/uart_tx_controller_mod/state_reg[0]
+
+  Ref  DFF        Ref:/WORK/uart/uart_tx_inst/uart_tx_controller_mod/state_reg[1]
+  Impl DFF        Imp:/WORK/uart/uart_tx_inst/uart_tx_controller_mod/state_reg[1]
+
+  Ref  DFF        Ref:/WORK/uart/uart_tx_inst/uart_tx_controller_mod/state_reg[2]
+  Impl DFF        Imp:/WORK/uart/uart_tx_inst/uart_tx_controller_mod/state_reg[2]
+
+  Ref  DFF        Ref:/WORK/uart/uart_tx_inst/uart_tx_parity_bit_mod/par_bit_reg
+  Impl DFF        Imp:/WORK/uart/uart_tx_inst/uart_tx_parity_bit_mod/par_bit_reg
+
+  Ref  DFF        Ref:/WORK/uart/uart_tx_inst/uart_tx_serializer_mod/ser_counter_reg[0]
+  Impl DFF        Imp:/WORK/uart/uart_tx_inst/uart_tx_serializer_mod/ser_counter_reg[0]
+
+  Ref  DFF        Ref:/WORK/uart/uart_tx_inst/uart_tx_serializer_mod/ser_counter_reg[1]
+  Impl DFF        Imp:/WORK/uart/uart_tx_inst/uart_tx_serializer_mod/ser_counter_reg[1]
+
+  Ref  DFF        Ref:/WORK/uart/uart_tx_inst/uart_tx_serializer_mod/ser_counter_reg[2]
+  Impl DFF        Imp:/WORK/uart/uart_tx_inst/uart_tx_serializer_mod/ser_counter_reg[2]
+
+  Ref  DFF        Ref:/WORK/uart/uart_tx_inst/uart_tx_serializer_mod/ser_data_reg
+  Impl DFF        Imp:/WORK/uart/uart_tx_inst/uart_tx_serializer_mod/ser_data_reg
+
+  Ref  DFF        Ref:/WORK/uart/uart_tx_inst/uart_tx_serializer_mod/ser_done_reg
+  Impl DFF        Imp:/WORK/uart/uart_tx_inst/uart_tx_serializer_mod/ser_done_reg
+
+  Ref  Port       Ref:/WORK/uart/busy
+  Impl Port       Imp:/WORK/uart/busy
+
+  Ref  Port       Ref:/WORK/uart/rx_data_valid
+  Impl Port       Imp:/WORK/uart/rx_data_valid
+
+  Ref  Port       Ref:/WORK/uart/rx_p_data[0]
+  Impl Port       Imp:/WORK/uart/rx_p_data[0]
+
+  Ref  Port       Ref:/WORK/uart/rx_p_data[10]
+  Impl Port       Imp:/WORK/uart/rx_p_data[10]
+
+  Ref  Port       Ref:/WORK/uart/rx_p_data[1]
+  Impl Port       Imp:/WORK/uart/rx_p_data[1]
+
+  Ref  Port       Ref:/WORK/uart/rx_p_data[2]
+  Impl Port       Imp:/WORK/uart/rx_p_data[2]
+
+  Ref  Port       Ref:/WORK/uart/rx_p_data[3]
+  Impl Port       Imp:/WORK/uart/rx_p_data[3]
+
+  Ref  Port       Ref:/WORK/uart/rx_p_data[4]
+  Impl Port       Imp:/WORK/uart/rx_p_data[4]
+
+  Ref  Port       Ref:/WORK/uart/rx_p_data[5]
+  Impl Port       Imp:/WORK/uart/rx_p_data[5]
+
+  Ref  Port       Ref:/WORK/uart/rx_p_data[6]
+  Impl Port       Imp:/WORK/uart/rx_p_data[6]
+
+  Ref  Port       Ref:/WORK/uart/rx_p_data[7]
+  Impl Port       Imp:/WORK/uart/rx_p_data[7]
+
+  Ref  Port       Ref:/WORK/uart/rx_p_data[8]
+  Impl Port       Imp:/WORK/uart/rx_p_data[8]
+
+  Ref  Port       Ref:/WORK/uart/rx_p_data[9]
+  Impl Port       Imp:/WORK/uart/rx_p_data[9]
+
+  Ref  Port       Ref:/WORK/uart/tx_out
+  Impl Port       Imp:/WORK/uart/tx_out
+
+ [BBNet: multiply-driven net
+  BBPin: black-box pin
+  Cut:   cut-point
+  DFF:   non-constant DFF register
+  DFF0:  constant 0 DFF register
+  DFF1:  constant 1 DFF register
+  DFFX:  constant X DFF register
+  DFF0X: constrained 0X DFF register
+  DFF1X: constrained 1X DFF register
+  LAT:   non-constant latch register
+  LAT0:  constant 0 latch register
+  LAT1:  constant 1 latch register
+  LATX:  constant X latch register
+  LAT0X: constrained 0X latch register
+  LAT1X: constrained 1X latch register
+  LATCG: clock-gating latch register
+  TLA:   transparent latch register
+  TLA0X: transparent constrained 0X latch register
+  TLA1X: transparent constrained 1X latch register
+  Loop:  cycle break point
+  Port:  primary (top-level) port
+  Und:   undriven signal cut-point
+  Unk:   unknown signal cut-point]
+
+1

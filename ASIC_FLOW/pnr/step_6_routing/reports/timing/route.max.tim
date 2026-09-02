@@ -1,0 +1,66 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : uart
+Version: O-2018.06-SP1
+Date   : Mon Aug 31 21:08:06 2026
+****************************************
+
+  Startpoint: rst_n (input port clocked by sys_clk)
+  Endpoint: tx_out (output port clocked by sys_clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: COMBO
+  Path Type: max
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock sys_clk (rise edge)                                                    0.00      0.00
+  clock network delay (ideal)                                                  0.00      0.00
+  input external delay                                                         2.00      2.00
+
+  rst_n (in)                                                         0.02      0.01      2.01 r
+  rst_n (net)                                       1      1.74
+  placeZBUF_inst_38/A (NBUFFX4_RVT)                                  0.02      0.00      2.01 r
+  placeZBUF_inst_38/Y (NBUFFX4_RVT)                                  0.05      0.07      2.08 r
+  placeZBUF_3 (net)                                13     18.22
+  uart_tx_inst/uart_tx_controller_mod/U28/A1 (AND2X1_RVT)            0.05      0.00      2.08 r
+  uart_tx_inst/uart_tx_controller_mod/U28/Y (AND2X1_RVT)             0.06      0.08      2.16 r
+  uart_tx_inst/uart_tx_controller_mod/n11 (net)     4      4.97
+  uart_tx_inst/uart_tx_controller_mod/U12/A1 (NAND2X0_RVT)           0.06      0.00      2.16 r
+  uart_tx_inst/uart_tx_controller_mod/U12/Y (NAND2X0_RVT)            0.17      0.13      2.29 f
+  uart_tx_inst/uart_tx_controller_mod/mux_sel[0] (net)
+                                                    5      6.35
+  uart_tx_inst/uart_tx_mux4x1_mod/U1/A (INVX0_RVT)                   0.17      0.00      2.29 f
+  uart_tx_inst/uart_tx_mux4x1_mod/U1/Y (INVX0_RVT)                   0.09      0.08      2.38 r
+  uart_tx_inst/uart_tx_mux4x1_mod/n1 (net)          2      2.09
+  uart_tx_inst/uart_tx_mux4x1_mod/U5/A4 (AO22X1_RVT)                 0.09      0.00      2.38 r
+  uart_tx_inst/uart_tx_mux4x1_mod/U5/Y (AO22X1_RVT)                  0.04      0.08      2.46 r
+  uart_tx_inst/uart_tx_mux4x1_mod/n3 (net)          1      0.87
+  uart_tx_inst/uart_tx_mux4x1_mod/U3/A2 (AO22X1_RVT)                 0.04      0.00      2.46 r
+  uart_tx_inst/uart_tx_mux4x1_mod/U3/Y (AO22X1_RVT)                  0.06      0.11      2.57 r
+  uart_tx_inst/uart_tx_mux4x1_mod/mux_out (net)     1      3.76
+  tx_out (out)                                                       0.06      0.00      2.57 r
+  data arrival time                                                                      2.57
+
+  clock sys_clk (rise edge)                                                   10.00     10.00
+  clock network delay (ideal)                                                  0.00     10.00
+  clock uncertainty                                                           -0.20      9.80
+  output external delay                                                       -2.00      7.80
+  data required time                                                                     7.80
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     7.80
+  data arrival time                                                                     -2.57
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            5.23
+
+
+1

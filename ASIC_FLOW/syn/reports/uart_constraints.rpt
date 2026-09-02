@@ -1,0 +1,27 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : uart
+Version: O-2018.06-SP1
+Date   : Sat Aug 29 05:05:21 2026
+****************************************
+
+
+   min_delay/hold ('sys_clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   baud_cnt_reg[0]/D            0.10           0.08 f        -0.02  (VIOLATED)
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   uart                         0.00         833.01        -833.01  (VIOLATED)
+
+
+1

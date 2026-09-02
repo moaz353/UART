@@ -1,0 +1,22 @@
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP1
+Date:        Sat Aug 29 05:05:20 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               2
+    Connected to power or ground (LINT-32)                          2
+
+Nets                                                                1
+    Unloaded nets (LINT-2)                                          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'uart', net 'n7' driven by pin 'uart_rx_inst/p_data[10]' has no loads. (LINT-2)
+Warning: In design 'uart_tx', a pin on submodule 'uart_tx_mux4x1_mod' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in0' is connected to logic 0. 
+Warning: In design 'uart_tx', a pin on submodule 'uart_tx_mux4x1_mod' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in1' is connected to logic 1. 
+1

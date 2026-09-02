@@ -1,0 +1,62 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+Design : uart
+Version: O-2018.06-SP1
+Date   : Mon Aug 31 20:36:19 2026
+****************************************
+
+  Startpoint: uart_rx_inst/uart_rx_data_sampling_blk/sampled_bit_reg (rising edge-triggered flip-flop clocked by sys_clk)
+  Endpoint: uart_rx_inst/uart_rx_start_check_blk/str_glitch_reg (rising edge-triggered flip-flop clocked by sys_clk)
+  Mode: func
+  Corner: fast
+  Scenario: func_fast
+  Path Group: sys_clk
+  Path Type: min
+
+  Point                                          Fanout    Cap      Trans      Incr      Path  
+  ----------------------------------------------------------------------------------------------------
+  clock sys_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.00      0.00
+
+  uart_rx_inst/uart_rx_data_sampling_blk/sampled_bit_reg/CLK (DFFARX1_RVT)
+                                                                     0.01      0.00      0.00 r
+  uart_rx_inst/uart_rx_data_sampling_blk/sampled_bit_reg/Q (DFFARX1_RVT)
+                                                                     0.03      0.07      0.07 r
+  uart_rx_inst/uart_rx_data_sampling_blk/sampled_bit (net)
+                                                    5      6.80
+  uart_rx_inst/uart_rx_start_check_blk/U3/A2 (AND2X1_RVT)            0.03      0.00      0.07 r
+  uart_rx_inst/uart_rx_start_check_blk/U3/Y (AND2X1_RVT)             0.01      0.02      0.09 r
+  uart_rx_inst/uart_rx_start_check_blk/N1 (net)     1      0.75
+  uart_rx_inst/uart_rx_start_check_blk/clockcopt_h_inst_319/A (NBUFFX2_RVT)
+                                                                     0.01      0.00      0.09 r
+  uart_rx_inst/uart_rx_start_check_blk/clockcopt_h_inst_319/Y (NBUFFX2_RVT)
+                                                                     0.01      0.01      0.10 r
+  uart_rx_inst/uart_rx_start_check_blk/copt_net_22 (net)
+                                                    1      0.82
+  uart_rx_inst/uart_rx_start_check_blk/str_glitch_reg/D (DFFARX1_RVT)
+                                                                     0.01      0.00      0.10 r
+  data arrival time                                                                      0.10
+
+  clock sys_clk (rise edge)                                                    0.00      0.00
+  clock network delay (propagated)                                             0.00      0.00
+  uart_rx_inst/uart_rx_start_check_blk/str_glitch_reg/CLK (DFFARX1_RVT)
+                                                                     0.01      0.00      0.00 r
+  clock uncertainty                                                            0.10      0.10
+  library hold time                                                           -0.00      0.10
+  data required time                                                                     0.10
+  ----------------------------------------------------------------------------------------------------
+  data required time                                                                     0.10
+  data arrival time                                                                     -0.10
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                                            0.00
+
+
+1
