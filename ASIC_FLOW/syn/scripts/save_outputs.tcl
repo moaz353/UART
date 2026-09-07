@@ -22,7 +22,6 @@ change_names -rules verilog
 # ###########################################################################
 # 2. Gate-level netlist
 # ###########################################################################
-# -pg keeps power/ground nets in the netlist so the PnR step 1 can map them.
 write_file -format verilog -hierarchy -output $SYN_NETLIST
 
 # ###########################################################################
